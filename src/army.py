@@ -26,26 +26,31 @@ class Army():
             "infantry": {
                 "attack":  0,
                 "defense": 0,
-                "health":  0
+                "health":  0,
+                "march_speed": 0
             },
             "cavalry": {
                 "attack":  0,
                 "defense": 0,
-                "health":  0
+                "health":  0,
+                "march_speed": 0
             },
             "archer": {
                 "attack":  0,
                 "defense": 0,
-                "health":  0
+                "health":  0,
+                "march_speed": 0
             },
             "siege": {
                 "attack":  0,
                 "defense": 0,
-                "health":  0
+                "health":  0,
+                "march_speed": 0
             },
             "attack":  0,
             "defense": 0,
             "health":  0,
+            "march_speed": 0,
             "damage":  0,
             "skill_damage": 0,
             "additional_skill_damage": 0,  # e.g. Kusunoki's active skill
@@ -53,7 +58,6 @@ class Army():
             "reduce_skill_damage_taken": 0,
             "normal_attack_damage":   0,
             "counter_attack_damage" : 0,
-            "march_speed": 0,
         }
 
         self.rage = 0
@@ -82,6 +86,9 @@ class Army():
 
 
     def compute_buffs(self):
+        # Add talents buffs
+        self.add_talents_buffs()
+
         # Add war frenzy buffs
         if self.army_info["war_frenzy"]:
             self.buffs["attack"] += 3
@@ -121,9 +128,16 @@ class Army():
     # with the one of specific troop type
     def get_summed_buffs(self):
         all_stats = {key: {} for key in ["infantry", "cavalry", "archer", "siege"]}
-        for tt in ["infantry", "cavalry", "archer", "siege"]:
-            for stat in ["attack", "defense", "health"]:
-                all_stats[tt][stat] = self.buffs[tt][stat] + self.buffs[stat]
+        # for tt in ["infantry", "cavalry", "archer", "siege"]:
+        #     for stat in ["attack", "defense", "health", "march_speed"]:
+        #         all_stats[tt][stat] = self.buffs[tt][stat] + self.buffs[stat]
+        
+        for buff_type in self.buffs:
+            if buff_type in ["infantry", "cavalry", "archer", "siege"]:
+                for stat in ["attack", "defense", "health", "march_speed"]:
+                    all_stats[buff_type][stat] = self.buffs[buff_type][stat] + self.buffs[stat]
+            else:
+                all_stats[buff_type] = self.buffs[buff_type]
         return all_stats
 
 
@@ -148,6 +162,22 @@ class Army():
                         self.buffs[troop][stat] += military_technologies_buffs[research_name][troop][stat][research_level]
                 else:
                     self.buffs[troop] += military_technologies_buffs[research_name][troop][research_level]
+
+
+    def add_talents_buffs(self):
+        for talent_cat in self.primary_commander["talents_levels"]:
+            talents_levels = self.primary_commander["talents_levels"][talent_cat]
+            talents = json.load(open(f"../rss/talents/{talent_cat}.json"))
+            for talent in talents_levels:
+                level = talents_levels[talent] - 1
+                if talents[talent]["category"] == "simple":
+                    talent_buffs = talents[talent]["buffs"]
+                    for tt in talent_buffs:
+                        if isinstance(talent_buffs[tt], dict):
+                            for cat in talent_buffs[tt]:
+                                self.buffs[tt][cat] += talent_buffs[tt][cat][level]
+                        else:
+                            self.buffs[tt] += talent_buffs[tt][level]
 
    
     def add_commander_view_buffs(self):

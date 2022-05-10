@@ -19,10 +19,10 @@ class Battle_Simulator():
     # Display summary of buffs for each army
     def present_buffs(self):
         print(f"\n{colors.HEADER}{colors.BOLD}Report{colors.ENDC}\n")
-        for army in [self.army_1, self.army_2]:
+        for i, army in enumerate([self.army_1, self.army_2]):
             print(
                 f"\
-                Army 1: \n\
+                Army {i+1}: \n\
                     Primary Commander:   Lvl {army.primary_commander['level']} {army.primary_commander['name']} {army.primary_commander['skills_levels']}\n\
                     Secondary Commander: Lvl {army.secondary_commander['level']} {army.secondary_commander['name']} {army.secondary_commander['skills_levels']}\n\
                     \n\
@@ -39,6 +39,15 @@ class Battle_Simulator():
                         Siege Attack:     {colors.YELLOW}{army.total_buffs['siege']['attack']}%{colors.ENDC}\n\
                         Siege Defense:    {colors.YELLOW}{army.total_buffs['siege']['defense']}%{colors.ENDC}\n\
                         Siege Health:     {colors.YELLOW}{army.total_buffs['siege']['health']}%{colors.ENDC}\n\
+                    Additional Buffs:\n\
+                        Damage:                   {colors.YELLOW}{army.total_buffs['damage']}%{colors.ENDC}\n\
+                        Skill Damage:             {colors.YELLOW}{army.total_buffs['skill_damage']}%{colors.ENDC}\n\
+                        Additional Skill Damage:  {colors.YELLOW}{army.total_buffs['additional_skill_damage']}%{colors.ENDC}\n\
+                        Reduce Damage Taken:      {colors.YELLOW}{army.total_buffs['reduce_damage_taken']}%{colors.ENDC}\n\
+                        Reduce Skil Damage Taken: {colors.YELLOW}{army.total_buffs['reduce_skill_damage_taken']}%{colors.ENDC}\n\
+                        Normal Attack Damage:     {colors.YELLOW}{army.total_buffs['normal_attack_damage']}%{colors.ENDC}\n\
+                        Counter Attack Damage:    {colors.YELLOW}{army.total_buffs['counter_attack_damage']}%{colors.ENDC}\n\
+                        March Speed:              {colors.YELLOW}{army.total_buffs['march_speed']}%{colors.ENDC}\n\
             ")
 
     # Start the combat simulation

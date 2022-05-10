@@ -20,6 +20,3 @@ class Talent():
 
         if "probability" in info:
             self.probability = info["probability"]
-
-    def get_buff_types(self):
-        return list(self.buff.keys())

@@ -12,7 +12,14 @@
         "level": 1,
         "skills_levels": [
             1, 0, 0, 0
-        ]
+        ],
+        "talents_levels": {
+            "Skill": {
+                "Attack_1": 1,
+                "Burning_Blood": 3,
+                "Defense_1": 3
+            }
+        }
     },
 
     "technologies_levels": {
