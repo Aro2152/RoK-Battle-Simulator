@@ -1,3 +1,6 @@
+# Authors: Aro2152
+# Copyright (C) 2022 Aro2152
+
 import json
 import numpy as np
 
