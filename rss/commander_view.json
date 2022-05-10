@@ -1,0 +1,12 @@
+{
+    "drillmaster": {
+        "attack": 1
+    },
+    "iron_guard": {
+        "health": 1
+    },
+    "knight_head": {
+        "defense": 1,
+        "health": 1
+    }
+}

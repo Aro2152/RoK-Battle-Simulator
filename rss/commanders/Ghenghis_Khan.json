@@ -1,0 +1,20 @@
+{
+    "name": "Ghenghis_Khan",
+    "talents": [
+        "Cavalry",
+        "Versatility",
+        "Skill"
+    ],
+    "skills": {
+        "Chosen_One": {
+            "type": "active",
+            "categories": [
+                "direct_damage_factor"
+            ],
+            "rage_requirement": 950,
+            "stats": [
+                [800, 1000, 1200, 1400, 1700]
+            ]
+        }
+    }
+}

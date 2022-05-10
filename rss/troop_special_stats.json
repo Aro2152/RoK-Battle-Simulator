@@ -1,0 +1,283 @@
+{
+    "Rome": {
+        "buffs": {
+            "infantry": {
+                "defense": 5
+            }
+        },
+        "troops": {
+            "t4": {
+                "infantry": {
+                    "attack":  192,
+                    "defense": 202,
+                    "health":  187
+                }
+            },
+            "t5": {
+                "infantry": {
+                    "attack":  221,
+                    "defense": 222,
+                    "health":  216
+                }
+            }
+        }
+    },
+
+    "Germany": {
+        "buffs": {
+            "cavalry": {
+                "attack": 5
+            }
+        },
+        "troops": {
+            "t4": {
+                "cavalry": {
+                    "attack":  187,
+                    "defense": 197,
+                    "health":  197
+                }
+            },
+            "t5": {
+                "cavalry": {
+                    "attack":  220,
+                    "defense": 217,
+                    "health":  222
+                }
+            }
+        }
+    },
+
+    "Britain": {
+        "buffs": {
+            "archer": {
+                "attack": 5
+            }
+        },
+        "troops": {
+            "t4": {
+                "archer": {
+                    "attack":  202,
+                    "defense": 192,
+                    "health":  187
+                }
+            },
+            "t5": {
+                "archer": {
+                    "attack":  232,
+                    "defense": 216,
+                    "health":  211
+                }
+            }
+        }
+    },
+
+    "France": {
+        "buffs": {
+            "health": 3
+        },
+        "troops": {
+            "t4": {
+                "infantry": {
+                    "attack":  192,
+                    "defense": 192,
+                    "health":  197
+                }
+            },
+            "t5": {
+                "infantry": {
+                    "attack":  221,
+                    "defense": 212,
+                    "health":  227
+                }
+            }
+        }
+    },
+
+    "Vikings": {
+        "buffs": {
+            "infantry": {
+                "attack": 5
+            }
+        },
+        "troops": {
+            "t4": {
+                "infantry": {
+                    "attack":  192,
+                    "defense": 197,
+                    "health":  192
+                }
+            },
+            "t5": {
+                "infantry": {
+                    "attack":  221,
+                    "defense": 216,
+                    "health":  222
+                }
+            }
+        }
+    },
+
+    "Spain": {
+        "buffs": {
+            "cavalry": {
+                "defense": 5
+            }
+        },
+        "troops": {
+            "t4": {
+                "cavalry": {
+                    "attack":  197,
+                    "defense": 192,
+                    "health":  192
+                }
+            },
+            "t5": {
+                "cavalry": {
+                    "attack":  232,
+                    "defense": 212,
+                    "health":  216
+                }
+            }
+        }
+    },
+
+    "China": {
+        "buffs": {
+            "defense": 3
+        },
+        "troops": {
+            "t4": {
+                "archer": {
+                    "attack":  197,
+                    "defense": 197,
+                    "health":  187
+                }
+            },
+            "t5": {
+                "archer": {
+                    "attack":  227,
+                    "defense": 222,
+                    "health":  211
+                }
+            }
+        }
+    },
+
+    "Japan": {
+        "buffs": {
+            "attack": 3
+        },
+        "troops": {
+            "t4": {
+                "infantry": {
+                    "attack":  202,
+                    "defense": 192,
+                    "health":  187
+                }
+            },
+            "t5": {
+                "infantry": {
+                    "attack":  232,
+                    "defense": 212,
+                    "health":  216
+                }
+            }
+        }
+    },
+
+    "Korea": {
+        "buffs": {
+            "archer": {
+                "defense": 5
+            }
+        },
+        "troops": {
+            "t4": {
+                "archer": {
+                    "attack":  192,
+                    "defense": 202,
+                    "health":  187
+                }
+            },
+            "t5": {
+                "archer": {
+                    "attack":  221,
+                    "defense": 227,
+                    "health":  212
+                }
+            }
+        }
+    },
+
+    "Arabia": {
+        "buffs": {
+            "cavalry": {
+                "attack": 5
+            }
+        },
+        "troops": {
+            "t4": {
+                "cavalry": {
+                    "attack":  192,
+                    "defense": 192,
+                    "health":  197
+                }
+            },
+            "t5": {
+                "cavalry": {
+                    "attack":  227,
+                    "defense": 212,
+                    "health":  222
+                }
+            }
+        }
+    },
+
+    "Ottoman": {
+        "buffs": {
+            "archer": {
+                "health": 5
+            }
+        },
+        "troops": {
+            "t4": {
+                "archer": {
+                    "attack":  197,
+                    "defense": 192,
+                    "health":  192
+                }
+            },
+            "t5": {
+                "archer": {
+                    "attack":  227,
+                    "defense": 216,
+                    "health":  216
+                }
+            }
+        }
+    },
+
+    "Byzantium": {
+        "buffs": {
+            "cavalry": {
+                "health": 5
+            }
+        },
+        "troops": {
+            "t4": {
+                "cavalry": {
+                    "attack":  187,
+                    "defense": 202,
+                    "health":  192
+                }
+            },
+            "t5": {
+                "cavalry": {
+                    "attack":  221,
+                    "defense": 222,
+                    "health":  216
+                }
+            }
+        }
+    }
+}

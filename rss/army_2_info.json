@@ -1,0 +1,45 @@
+{
+    "civilization": "Japan",
+
+    "troop_count": 900,
+
+    "troop_tier": "t1",
+
+    "troop_type": "infantry",
+
+    "primary_commander": {
+        "name": "Markswoman",
+        "level": 1,
+        "skills_levels": [
+            1, 0, 0, 0
+        ]
+    },
+
+    "technologies_levels": {
+    },
+    
+    "city_skin": {
+    },
+
+    "commander_view": {
+    },
+
+    "military_buildings_levels": {
+        "barracks":      1,
+        "stable":        1,
+        "archery_range": 1
+    },
+    
+    "vip_level": 0,
+    
+    "war_frenzy": false,
+    
+    "items_buffs": {
+    },
+    
+    "alliance_buffs": {
+    },
+    
+    "kingdom_buffs": {
+    }
+}

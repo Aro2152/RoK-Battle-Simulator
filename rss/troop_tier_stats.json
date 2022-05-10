@@ -1,0 +1,112 @@
+{
+    "t1": {
+        "infantry": {
+            "attack":  62,
+            "defense": 120,
+            "health":  120
+        },
+        "cavalry": {
+            "attack":  60,
+            "defense": 120,
+            "health":  120
+        },
+        "archer": {
+            "attack":  60,
+            "defense": 123,
+            "health":  120
+        },
+        "siege": {
+            "attack":  60,
+            "defense": 120,
+            "health":  120
+        }
+    },
+    "t2": {
+        "infantry": {
+            "attack":  128,
+            "defense": 125,
+            "health":  125
+        },
+        "cavalry": {
+            "attack":  128,
+            "defense": 128,
+            "health":  125
+        },
+        "archer": {
+            "attack":  125,
+            "defense": 128,
+            "health":  128
+        },
+        "siege": {
+            "attack":  125,
+            "defense": 128,
+            "health":  125
+        }
+    },
+    "t3": {
+        "infantry": {
+            "attack":  163,
+            "defense": 158,
+            "health":  155
+        },
+        "cavalry": {
+            "attack":  163,
+            "defense": 158,
+            "health":  155
+        },
+        "archer": {
+            "attack":  158,
+            "defense": 155,
+            "health":  163
+        },
+        "siege": {
+            "attack":  163,
+            "defense": 155,
+            "health":  155
+        }
+    },
+    "t4": {
+        "infantry": {
+            "attack":  192,
+            "defense": 192,
+            "health":  187
+        },
+        "cavalry": {
+            "attack":  187,
+            "defense": 192,
+            "health":  192
+        },
+        "archer": {
+            "attack":  192,
+            "defense": 192,
+            "health":  187
+        },
+        "siege": {
+            "attack":  192,
+            "defense": 192,
+            "health":  187
+        }
+    },
+    "t5": {
+        "infantry": {
+            "attack":  220,
+            "defense": 212,
+            "health":  216
+        },
+        "cavalry": {
+            "attack":  220,
+            "defense": 212,
+            "health":  216
+        },
+        "archer": {
+            "attack":  220,
+            "defense": 216,
+            "health":  212
+        },
+        "siege": {
+            "attack":  220,
+            "defense": 216,
+            "health":  212
+        }
+    }
+}

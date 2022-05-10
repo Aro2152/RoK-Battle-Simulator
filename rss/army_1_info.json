@@ -1,0 +1,69 @@
+{
+    "civilization": "Germany",
+
+    "troop_count": 600,
+
+    "troop_tier": "t1",
+
+    "troop_type": "infantry",
+
+    "primary_commander": {
+        "name": "Ghenghis_Khan",
+        "level": 5,
+        "skills_levels": [
+            1, 0, 0, 0, 0
+        ]
+    },
+
+    "technologies_levels": {
+        "iron_working": 5,
+        "improved_fletching": 5,
+        "horsemanship": 5,
+        "flaming_projectile": 5,
+        "buckler": 5,
+        "leather_armor": 5,
+        "scale_armor": 5,
+        "enhanced_axle": 5,
+        "combat_tactics": 6,
+        "defensive_formation": 7,
+        "hearbal_medecine": 7,
+        "wootz_steal": 2,
+        "bodkin_arrows": 3,
+        "stirrups": 3,
+        "ballistics": 1,
+        "scutum": 1,
+        "pavise": 1,
+        "plate_armor": 3,
+        "heavy_frame": 1,
+        "medical_corpse": 5,
+        "combined_arms": 5,
+        "encampment": 4
+    },
+
+    "city_skin": {
+    },
+
+    "commander_view": [
+    ],
+    
+    "military_buildings_levels": {
+        "barracks":      24,
+        "stable":        24,
+        "archery_range": 24
+    },
+    
+    "vip_level": 11,
+    
+    "war_frenzy": false,
+    
+    "items_buffs": {
+        "attack": 2,
+        "defense": 2
+    },
+    
+    "alliance_buffs": {
+    },
+    
+    "kingdom_buffs": {
+    }
+}
