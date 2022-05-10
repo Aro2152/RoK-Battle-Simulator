@@ -46,10 +46,14 @@ class Army():
             "attack":  0,
             "defense": 0,
             "health":  0,
-            "damage":           0,
-            "damage_reduction": 0,
-            "normal_attack":  0,
-            "counter_attack": 0
+            "damage":  0,
+            "skill_damage": 0,
+            "additional_skill_damage": 0,  # e.g. Kusunoki's active skill
+            "reduce_damage_taken":       0,
+            "reduce_skill_damage_taken": 0,
+            "normal_attack_damage":   0,
+            "counter_attack_damage" : 0,
+            "march_speed": 0,
         }
 
         self.rage = 0
@@ -116,8 +120,8 @@ class Army():
     # Sum general buffs (attack, def, health)
     # with the one of specific troop type
     def get_summed_buffs(self):
-        all_stats = {key: {} for key in ["infantry", "cavalry", "archer"]}
-        for tt in ["infantry", "cavalry", "archer"]:
+        all_stats = {key: {} for key in ["infantry", "cavalry", "archer", "siege"]}
+        for tt in ["infantry", "cavalry", "archer", "siege"]:
             for stat in ["attack", "defense", "health"]:
                 all_stats[tt][stat] = self.buffs[tt][stat] + self.buffs[stat]
         return all_stats

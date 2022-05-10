@@ -19,40 +19,27 @@ class Battle_Simulator():
     # Display summary of buffs for each army
     def present_buffs(self):
         print(f"\n{colors.HEADER}{colors.BOLD}Report{colors.ENDC}\n")
-        print(
-            f"\
-            Army 1: \n\
-                Primary Commander:   Lvl {self.army_1.primary_commander['level']} {self.army_1.primary_commander['name']} {self.army_1.primary_commander['skills_levels']}\n\
-                Secondary Commander: Lvl {self.army_1.secondary_commander['level']} {self.army_1.secondary_commander['name']} {self.army_1.secondary_commander['skills_levels']}\n\
-                \n\
-                Troop Buffs:\n\
-                    Infantry Attack:  {colors.YELLOW}{self.army_1.total_buffs['infantry']['attack']}%{colors.ENDC}\n\
-                    Infantry Defense: {colors.YELLOW}{self.army_1.total_buffs['infantry']['defense']}%{colors.ENDC}\n\
-                    Infantry Health:  {colors.YELLOW}{self.army_1.total_buffs['infantry']['health']}%{colors.ENDC}\n\
-                    Cavalry Attack:   {colors.YELLOW}{self.army_1.total_buffs['cavalry']['attack']}%{colors.ENDC}\n\
-                    Cavalry Defense:  {colors.YELLOW}{self.army_1.total_buffs['cavalry']['defense']}%{colors.ENDC}\n\
-                    Cavalry Health:   {colors.YELLOW}{self.army_1.total_buffs['cavalry']['health']}%{colors.ENDC}\n\
-                    Archer Attack:    {colors.YELLOW}{self.army_1.total_buffs['archer']['attack']}%{colors.ENDC}\n\
-                    Archer Defense:   {colors.YELLOW}{self.army_1.total_buffs['archer']['defense']}%{colors.ENDC}\n\
-                    Archer Health:    {colors.YELLOW}{self.army_1.total_buffs['archer']['health']}%{colors.ENDC}\n\
-        ")
-        print(
-            f"\
-            Army 2: \n\
-                Primary Commander:   Lvl {self.army_2.primary_commander['level']} {self.army_2.primary_commander['name']} {self.army_2.primary_commander['skills_levels']}\n\
-                Secondary Commander: Lvl {self.army_2.secondary_commander['level']} {self.army_2.secondary_commander['name']} {self.army_2.secondary_commander['skills_levels']}\n\
-                \n\
-                Troop Buffs:\n\
-                    Infantry Attack:  {colors.YELLOW}{self.army_2.total_buffs['infantry']['attack']}%{colors.ENDC}\n\
-                    Infantry Defense: {colors.YELLOW}{self.army_2.total_buffs['infantry']['defense']}%{colors.ENDC}\n\
-                    Infantry Health:  {colors.YELLOW}{self.army_2.total_buffs['infantry']['health']}%{colors.ENDC}\n\
-                    Cavalry Attack:   {colors.YELLOW}{self.army_2.total_buffs['cavalry']['attack']}%{colors.ENDC}\n\
-                    Cavalry Defense:  {colors.YELLOW}{self.army_2.total_buffs['cavalry']['defense']}%{colors.ENDC}\n\
-                    Cavalry Health:   {colors.YELLOW}{self.army_2.total_buffs['cavalry']['health']}%{colors.ENDC}\n\
-                    Archer Attack:    {colors.YELLOW}{self.army_2.total_buffs['archer']['attack']}%{colors.ENDC}\n\
-                    Archer Defense:   {colors.YELLOW}{self.army_2.total_buffs['archer']['defense']}%{colors.ENDC}\n\
-                    Archer Health:    {colors.YELLOW}{self.army_2.total_buffs['archer']['health']}%{colors.ENDC}\n\
-        ")
+        for army in [self.army_1, self.army_2]:
+            print(
+                f"\
+                Army 1: \n\
+                    Primary Commander:   Lvl {army.primary_commander['level']} {army.primary_commander['name']} {army.primary_commander['skills_levels']}\n\
+                    Secondary Commander: Lvl {army.secondary_commander['level']} {army.secondary_commander['name']} {army.secondary_commander['skills_levels']}\n\
+                    \n\
+                    Troop Buffs:\n\
+                        Infantry Attack:  {colors.YELLOW}{army.total_buffs['infantry']['attack']}%{colors.ENDC}\n\
+                        Infantry Defense: {colors.YELLOW}{army.total_buffs['infantry']['defense']}%{colors.ENDC}\n\
+                        Infantry Health:  {colors.YELLOW}{army.total_buffs['infantry']['health']}%{colors.ENDC}\n\
+                        Cavalry Attack:   {colors.YELLOW}{army.total_buffs['cavalry']['attack']}%{colors.ENDC}\n\
+                        Cavalry Defense:  {colors.YELLOW}{army.total_buffs['cavalry']['defense']}%{colors.ENDC}\n\
+                        Cavalry Health:   {colors.YELLOW}{army.total_buffs['cavalry']['health']}%{colors.ENDC}\n\
+                        Archer Attack:    {colors.YELLOW}{army.total_buffs['archer']['attack']}%{colors.ENDC}\n\
+                        Archer Defense:   {colors.YELLOW}{army.total_buffs['archer']['defense']}%{colors.ENDC}\n\
+                        Archer Health:    {colors.YELLOW}{army.total_buffs['archer']['health']}%{colors.ENDC}\n\
+                        Siege Attack:     {colors.YELLOW}{army.total_buffs['siege']['attack']}%{colors.ENDC}\n\
+                        Siege Defense:    {colors.YELLOW}{army.total_buffs['siege']['defense']}%{colors.ENDC}\n\
+                        Siege Health:     {colors.YELLOW}{army.total_buffs['siege']['health']}%{colors.ENDC}\n\
+            ")
 
     # Start the combat simulation
     def fight(self):
@@ -60,9 +47,12 @@ class Battle_Simulator():
         self.present_buffs()
         trigger_active_skill_1 = 0
         trigger_active_skill_2 = 0
+        accumulated_rage_1 = 0
+        accumulated_rage_2 = 0
         attack_rage_generation = 86
         counterattack_rage_generation = 16
         compensation_rage_generation = 10
+        rage_accumulation_limit = 220
         turn = 1
 
         print(f"{colors.HEADER}{colors.BOLD}Battle Log{colors.ENDC}\n")
@@ -79,14 +69,14 @@ class Battle_Simulator():
             army_2_losses *= np.sqrt(10000 / self.army_1.troop_count)
             army_2_losses = np.ceil(army_2_losses)
             army_2_losses = int(army_2_losses)
-            self.army_1.rage += attack_rage_generation
+            accumulated_rage_1 += attack_rage_generation
             # Army 2
             army_2_dmg = (self.army_2.buffed_stats["attack"] * self.army_2.troop_count) / self.army_1.buffed_stats["defense"] * 2
             army_1_losses = army_2_dmg / self.army_1.buffed_stats["health"]
             army_1_losses *= np.sqrt(10000 / self.army_2.troop_count)
             army_1_losses = np.ceil(army_1_losses)
             army_1_losses = int(army_1_losses)
-            self.army_2.rage += attack_rage_generation
+            accumulated_rage_2 += attack_rage_generation
 
             # Counter attacks
             # Army 1
@@ -95,24 +85,24 @@ class Battle_Simulator():
             army_2_counter_losses *= np.sqrt(10000 / self.army_1.troop_count)
             army_2_counter_losses = np.ceil(army_2_counter_losses)
             army_2_counter_losses = int(army_2_counter_losses)
-            self.army_1.rage += counterattack_rage_generation
+            accumulated_rage_1 += counterattack_rage_generation
             # Army 2
             army_2_counter_dmg = (self.army_2.buffed_stats["attack"] * self.army_2.troop_count) / self.army_1.buffed_stats["defense"] * 2
             army_1_counter_losses = army_2_counter_dmg / self.army_1.buffed_stats["health"]
             army_1_counter_losses *= np.sqrt(10000 / self.army_2.troop_count)
             army_1_counter_losses = np.ceil(army_1_counter_losses)
             army_1_counter_losses = int(army_1_counter_losses)
-            self.army_2.rage += counterattack_rage_generation
+            accumulated_rage_2 += counterattack_rage_generation
 
             # Rage compensation generation
             if army_1_losses > army_2_losses:
-                self.army_1.rage += compensation_rage_generation
+                accumulated_rage_1 += compensation_rage_generation
             elif army_2_losses > army_1_losses:
-                self.army_2.rage += compensation_rage_generation
+                accumulated_rage_2 += compensation_rage_generation
             if army_1_counter_losses > army_2_counter_losses:
-                self.army_1.rage += compensation_rage_generation
+                accumulated_rage_1 += compensation_rage_generation
             elif army_2_counter_losses > army_1_counter_losses:
-                self.army_2.rage += compensation_rage_generation
+                accumulated_rage_2 += compensation_rage_generation
             
             # Active skills
             '''
@@ -143,6 +133,18 @@ class Battle_Simulator():
                     trigger_active_skill_2 = 0
             elif trigger_active_skill_2 == 5:
                 trigger_active_skill_2 = 0
+
+            # Regulate accumulated rage
+            if accumulated_rage_1 > rage_accumulation_limit:
+                accumulated_rage_1 = rage_accumulation_limit
+            if accumulated_rage_2 > rage_accumulation_limit:
+                accumulated_rage_2 = rage_accumulation_limit
+            # Add accumulated rage
+            self.army_1.rage += accumulated_rage_1
+            self.army_2.rage += accumulated_rage_2
+            # Reset accumulated rage
+            accumulated_rage_1 = 0
+            accumulated_rage_2 = 0
 
             # Check for active skills
             if self.army_1.rage >= self.army_1.active_skills[0]["rage_requirement"]:
