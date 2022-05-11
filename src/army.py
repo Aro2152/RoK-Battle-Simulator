@@ -2,7 +2,6 @@
 # Copyright (C) 2022 Aro2152
 
 import json
-from re import L
 
 class Army():
     def __init__(
