@@ -6,14 +6,14 @@
             }
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "infantry": {
                     "attack":  192,
                     "defense": 202,
                     "health":  187
                 }
             },
-            "t5": {
+            "T5": {
                 "infantry": {
                     "attack":  221,
                     "defense": 222,
@@ -30,14 +30,14 @@
             }
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "cavalry": {
                     "attack":  187,
                     "defense": 197,
                     "health":  197
                 }
             },
-            "t5": {
+            "T5": {
                 "cavalry": {
                     "attack":  220,
                     "defense": 217,
@@ -54,14 +54,14 @@
             }
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "archer": {
                     "attack":  202,
                     "defense": 192,
                     "health":  187
                 }
             },
-            "t5": {
+            "T5": {
                 "archer": {
                     "attack":  232,
                     "defense": 216,
@@ -76,14 +76,14 @@
             "health": 3
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "infantry": {
                     "attack":  192,
                     "defense": 192,
                     "health":  197
                 }
             },
-            "t5": {
+            "T5": {
                 "infantry": {
                     "attack":  221,
                     "defense": 212,
@@ -100,14 +100,14 @@
             }
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "infantry": {
                     "attack":  192,
                     "defense": 197,
                     "health":  192
                 }
             },
-            "t5": {
+            "T5": {
                 "infantry": {
                     "attack":  221,
                     "defense": 216,
@@ -124,14 +124,14 @@
             }
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "cavalry": {
                     "attack":  197,
                     "defense": 192,
                     "health":  192
                 }
             },
-            "t5": {
+            "T5": {
                 "cavalry": {
                     "attack":  232,
                     "defense": 212,
@@ -146,14 +146,14 @@
             "defense": 3
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "archer": {
                     "attack":  197,
                     "defense": 197,
                     "health":  187
                 }
             },
-            "t5": {
+            "T5": {
                 "archer": {
                     "attack":  227,
                     "defense": 222,
@@ -168,14 +168,14 @@
             "attack": 3
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "infantry": {
                     "attack":  202,
                     "defense": 192,
                     "health":  187
                 }
             },
-            "t5": {
+            "T5": {
                 "infantry": {
                     "attack":  232,
                     "defense": 212,
@@ -192,14 +192,14 @@
             }
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "archer": {
                     "attack":  192,
                     "defense": 202,
                     "health":  187
                 }
             },
-            "t5": {
+            "T5": {
                 "archer": {
                     "attack":  221,
                     "defense": 227,
@@ -216,14 +216,14 @@
             }
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "cavalry": {
                     "attack":  192,
                     "defense": 192,
                     "health":  197
                 }
             },
-            "t5": {
+            "T5": {
                 "cavalry": {
                     "attack":  227,
                     "defense": 212,
@@ -240,14 +240,14 @@
             }
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "archer": {
                     "attack":  197,
                     "defense": 192,
                     "health":  192
                 }
             },
-            "t5": {
+            "T5": {
                 "archer": {
                     "attack":  227,
                     "defense": 216,
@@ -264,14 +264,14 @@
             }
         },
         "troops": {
-            "t4": {
+            "T4": {
                 "cavalry": {
                     "attack":  187,
                     "defense": 202,
                     "health":  192
                 }
             },
-            "t5": {
+            "T5": {
                 "cavalry": {
                     "attack":  221,
                     "defense": 222,

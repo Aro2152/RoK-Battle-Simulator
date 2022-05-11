@@ -1,5 +1,5 @@
 {
-    "t1": {
+    "T1": {
         "infantry": {
             "attack":  62,
             "defense": 120,
@@ -21,7 +21,7 @@
             "health":  120
         }
     },
-    "t2": {
+    "T2": {
         "infantry": {
             "attack":  128,
             "defense": 125,
@@ -43,7 +43,7 @@
             "health":  125
         }
     },
-    "t3": {
+    "T3": {
         "infantry": {
             "attack":  163,
             "defense": 158,
@@ -65,7 +65,7 @@
             "health":  155
         }
     },
-    "t4": {
+    "T4": {
         "infantry": {
             "attack":  192,
             "defense": 192,
@@ -87,7 +87,7 @@
             "health":  187
         }
     },
-    "t5": {
+    "T5": {
         "infantry": {
             "attack":  220,
             "defense": 212,

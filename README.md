@@ -19,6 +19,8 @@ To Do:
 
     Foremost:
         - Support for primary skills with multiple effects
+        - Battle against different troop type
+        - Deal with number rounding
 
     Long term:
         - Add AoE support
