@@ -167,7 +167,7 @@ class Battle_Simulator():
             # Army 1
             if trigger_active_skill_1 == 2:  # Trigger primary
                 skill_level = self.army_1.primary_commander['skills_levels'][0] - 1
-                dmg_factor = self.army_1.active_skills[0]["stats"][0][skill_level]
+                dmg_factor = self.army_1.active_skills[0]["buffs"]["direct_damage_factor"][skill_level]
                 army_1_skill_dmg = army_1_dmg / 2 * (dmg_factor/100)
                 army_2_skill_losses = army_1_skill_dmg / self.army_2.buffed_stats["health"]
                 army_2_skill_losses *= np.sqrt(10000 / self.army_1.troop_count)
@@ -176,7 +176,7 @@ class Battle_Simulator():
                 self.army_1.rage += attack_rage_generation
             elif trigger_active_skill_1 == 4:  # Trigger secondary
                 skill_level = self.army_1.secondary_commander['skills_levels'][0] - 1
-                dmg_factor = self.army_1.active_skills[1]["stats"][0][skill_level]
+                dmg_factor = self.army_1.active_skills[1]["buffs"]["direct_damage_factor"][skill_level]
                 army_1_skill_dmg = army_1_dmg / 2 * (dmg_factor/100)
                 army_2_skill_losses = army_1_skill_dmg / self.army_2.buffed_stats["health"]
                 army_2_skill_losses *= np.sqrt(10000 / self.army_1.troop_count)
@@ -185,7 +185,7 @@ class Battle_Simulator():
             # Army 2
             if trigger_active_skill_2 == 2:  # Trigger primary
                 skill_level = self.army_2.primary_commander['skills_levels'][0] - 1
-                dmg_factor = self.army_2.active_skills[0]["stats"][0][skill_level]
+                dmg_factor = self.army_2.active_skills[0]["buffs"]["direct_damage_factor"][skill_level]
                 army_2_skill_dmg = army_2_dmg / 2 * (dmg_factor/100)
                 army_1_skill_losses = army_2_skill_dmg / self.army_1.buffed_stats["health"]
                 army_1_skill_losses *= np.sqrt(10000 / self.army_2.troop_count)
@@ -194,7 +194,7 @@ class Battle_Simulator():
                 self.army_2.rage += attack_rage_generation
             elif trigger_active_skill_2 == 4:  # Trigger secondary
                 skill_level = self.army_2.secondary_commander['skills_levels'][0] - 1
-                dmg_factor = self.army_2.active_skills[1]["stats"][0][skill_level]
+                dmg_factor = self.army_2.active_skills[1]["buffs"]["direct_damage_factor"][skill_level]
                 army_2_skill_dmg = army_2_dmg / 2 * (dmg_factor/100)
                 army_1_skill_losses = army_2_skill_dmg / self.army_1.buffed_stats["health"]
                 army_1_skill_losses *= np.sqrt(10000 / self.army_2.troop_count)

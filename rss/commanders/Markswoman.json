@@ -8,40 +8,44 @@
     "skills": {
         "Raid": {
             "type": "active",
-            "categories": [
-                "direct_damage_factor"
-            ],
+            "category": "complex",
             "rage_requirement": 1000,
-            "stats": [
-                [50, 60, 70, 80, 100]
-            ]
+            "buffs": {
+                "direct_damage_factor": [
+                    50, 60, 70, 80, 100
+                ]
+            }
         },
         "Poison_Arrow": {
             "type": "passive",
-            "categories": [
-                "bonus_damage_to_barbarians"
-            ],
-            "stats": [
-                [2, 4, 6, 8, 10]
-            ]
+            "category": "simple",
+            "buffs": {
+                "damage_to_barbarians": [
+                    2, 4, 6, 8, 1
+                ]
+            }
         },
         "Accuracy": {
             "type": "passive",
-            "categories": [
-                "archer_attack_bonus"
-            ],
-            "stats": [
-                [1, 2, 3, 4, 5]
-            ]
+            "category": "simple",
+            "buffs": {
+                "archer": {
+                    "attack": [
+                        1, 2, 3, 4, 5
+                    ]
+                }
+            }
         },
         "Agility": {
             "type": "passive",
-            "categories": [
-                "archer_defense_bonus"
-            ],
-            "stats": [
-                [1, 2, 3, 4, 5]
-            ]
+            "category": "simple",
+            "buffs": {
+                "archer": {
+                    "defense": [
+                        1, 2, 3, 4, 5
+                    ]
+                }
+            }
         }
     }
 }

@@ -8,13 +8,13 @@
     "skills": {
         "Chosen_One": {
             "type": "active",
-            "categories": [
-                "direct_damage_factor"
-            ],
+            "category": "complex",
             "rage_requirement": 950,
-            "stats": [
-                [800, 1000, 1200, 1400, 1700]
-            ]
+            "buffs": {
+                "direct_damage_factor": [
+                    800, 1000, 1200, 1400, 1700
+                ]
+            }
         }
     }
 }
