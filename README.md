@@ -21,3 +21,10 @@ To Do:
 - Add more commanders
 - Add multiple armies combat support
 ---
+
+Things to do/confirm:
+- "Clarity" Skill talent: does the 6 second countdown restarts when secondary commander active skill triggers?
+- "All For One" Skill talent: Only the next acitve skill of the secondary commander is buffed? If silenced, will the bugg carry on to next cycle?
+- If active skill rage requirement of secondary < active skill rage requirement of primary, (e.g. Khan in secondary) what happens?
+- Does the active skill give as much rage as a normal attack?
+- Is the excess rage really removed?

@@ -2,6 +2,7 @@
 # Copyright (C) 2022 Aro2152
 
 import json
+from re import L
 
 class Army():
     def __init__(
@@ -9,8 +10,8 @@ class Army():
     ):
         self.army_info = army_info
         self.troop_count = army_info["troop_count"]
-        self.primary_commander = army_info["primary_commander"]
 
+        self.primary_commander = army_info["primary_commander"]
         # Check for secondary commander
         if "secondary_commander" in army_info:
             self.secondary_commander = army_info["secondary_commander"]
@@ -26,30 +27,39 @@ class Army():
             "infantry": {
                 "attack":  0,
                 "defense": 0,
-                "health":  0
+                "health":  0,
+                "march_speed": 0
             },
             "cavalry": {
                 "attack":  0,
                 "defense": 0,
-                "health":  0
+                "health":  0,
+                "march_speed": 0
             },
             "archer": {
                 "attack":  0,
                 "defense": 0,
-                "health":  0
+                "health":  0,
+                "march_speed": 0
             },
             "siege": {
                 "attack":  0,
                 "defense": 0,
-                "health":  0
+                "health":  0,
+                "march_speed": 0
             },
             "attack":  0,
             "defense": 0,
             "health":  0,
-            "damage":           0,
-            "damage_reduction": 0,
-            "normal_attack":  0,
-            "counter_attack": 0
+            "march_speed": 0,
+            "damage":  0,
+            "skill_damage": 0,
+            "additional_skill_damage": 0,  # e.g. Kusunoki's active skill
+            "reduce_damage_taken":       0,
+            "reduce_skill_damage_taken": 0,
+            "normal_attack_damage":   0,
+            "counter_attack_damage":  0,
+            "damage_to_barbarians": 0
         }
 
         self.rage = 0
@@ -78,6 +88,12 @@ class Army():
 
 
     def compute_buffs(self):
+        # Add talents buffs
+        self.add_talents_buffs()
+
+        # Add skills buffs
+        self.add_skills_buffs()
+
         # Add war frenzy buffs
         if self.army_info["war_frenzy"]:
             self.buffs["attack"] += 3
@@ -90,9 +106,6 @@ class Army():
 
         # Add civilization buffs
         self.add_civ_buffs()
-
-        # Add commander buffs
-        self.add_commander_buffs()
 
         # Add commander view buffs
         self.add_commander_view_buffs()
@@ -116,10 +129,13 @@ class Army():
     # Sum general buffs (attack, def, health)
     # with the one of specific troop type
     def get_summed_buffs(self):
-        all_stats = {key: {} for key in ["infantry", "cavalry", "archer"]}
-        for tt in ["infantry", "cavalry", "archer"]:
-            for stat in ["attack", "defense", "health"]:
-                all_stats[tt][stat] = self.buffs[tt][stat] + self.buffs[stat]
+        all_stats = {key: {} for key in ["infantry", "cavalry", "archer", "siege"]}
+        for buff_type in self.buffs:
+            if buff_type in ["infantry", "cavalry", "archer", "siege"]:
+                for stat in ["attack", "defense", "health", "march_speed"]:
+                    all_stats[buff_type][stat] = self.buffs[buff_type][stat] + self.buffs[stat]
+            else:
+                all_stats[buff_type] = self.buffs[buff_type]
         return all_stats
 
 
@@ -145,6 +161,22 @@ class Army():
                 else:
                     self.buffs[troop] += military_technologies_buffs[research_name][troop][research_level]
 
+
+    def add_talents_buffs(self):
+        for talent_cat in self.primary_commander["talents_levels"]:
+            talents_levels = self.primary_commander["talents_levels"][talent_cat]
+            talents = json.load(open(f"../rss/talents/{talent_cat}.json"))
+            for talent in talents_levels:
+                level = talents_levels[talent] - 1
+                if talents[talent]["category"] == "simple":
+                    talent_buffs = talents[talent]["buffs"]
+                    for tt in talent_buffs:
+                        if isinstance(talent_buffs[tt], dict):
+                            for cat in talent_buffs[tt]:
+                                self.buffs[tt][cat] += talent_buffs[tt][cat][level]
+                        else:
+                            self.buffs[tt] += talent_buffs[tt][level]
+
    
     def add_commander_view_buffs(self):
         buffs = json.load(open("../rss/commander_view.json"))
@@ -153,7 +185,7 @@ class Army():
                 self.buffs[buff] += buffs[buff_name][buff]
 
    
-    def add_commander_buffs(self):
+    def add_skills_buffs(self):
         self.active_skills = []
         for commander in ["primary_commander", "secondary_commander"]:
             if commander in self.army_info:
@@ -161,14 +193,19 @@ class Army():
                 skills_levels = self.army_info[commander]["skills_levels"]
                 commander_info = json.load(open(f"../rss/commanders/{name}.json"))
                 for i, skill in enumerate(commander_info["skills"]):
-                    if commander_info["skills"][skill]["type"] == "active":
-                        self.active_skills.append(commander_info["skills"][skill])
-                    for j, cat in enumerate(commander_info["skills"][skill]["categories"]):
-                        if skills_levels[i] > 0:
-                            if cat == "archer_attack_bonus":
-                                self.buffs["archer"]["attack"] += commander_info["skills"][skill]["stats"][j][skills_levels[i]-1]
-                            elif cat == "archer_defense_bonus":
-                                self.buffs["archer"]["defense"] += commander_info["skills"][skill]["stats"][j][skills_levels[i]-1]
+                    if skills_levels[i] > 0:
+                        if commander_info["skills"][skill]["type"] == "active":
+                            self.active_skills.append(commander_info["skills"][skill])
+                        elif commander_info["skills"][skill]["category"] == "simple":
+                            skill_buffs = commander_info["skills"][skill]["buffs"]
+                            for tt in skill_buffs:
+                                if isinstance(skill_buffs[tt], dict):
+                                    for cat in skill_buffs[tt]:
+                                        self.buffs[tt][cat] += skill_buffs[tt][cat][skills_levels[i]-1]
+                                else:
+                                    self.buffs[tt] += skill_buffs[tt][skills_levels[i]-1]
+
+
 
 
     def add_civ_buffs(self):
