@@ -1,5 +1,6 @@
 from asyncio import selector_events
 from dash import Dash, html, dcc, Input, Output
+import dash_bootstrap_components as dbc
 import json
 import os
 
@@ -51,280 +52,450 @@ for bld in buildings:
     buildings_levels[f"{bld}_min"] = list(_[bld].keys())[0]
     buildings_levels[f"{bld}_max"] = list(_[bld].keys())[-1]
 
-
-app = Dash(__name__)
+app = Dash(__name__,external_stylesheets=[dbc.themes.SUPERHERO])
 
 app.layout = html.Div([
 
 ########################################################
 ######################## ARMY 1 ########################
 ########################################################
-
+dbc.CardHeader("Rise Of Kingdoms - Battle Simulator",style={"align": "center","text-decoration": "underline"}),
     html.Div(
         children=[
-        html.Label('Army 1'),
+        dbc.CardHeader("Army 1"),
         html.Br(),
 
         html.Br(),
-        html.Label('Civilization'),
-        dcc.Dropdown(civs, civs[0]),
-
+        dbc.Card(
+            [
+                dbc.CardHeader("Civilization"),
+                dbc.CardBody(
+                    [
+                        dcc.Dropdown(civs, civs[0],style={"color": "black"})
+                    ],
+                ),
+            ], 
+        ),
         html.Br(),
-        html.Label('VIP Level'),
-        dcc.Slider(
-            vips[0],
-            vips[-1],
-            1,
-            value=vips[5],
-            id='vips-a1'
+        dbc.Card(
+            [
+                dbc.CardHeader("VIP Level"),
+                dbc.CardBody(
+                    [
+                        dcc.Slider(
+                            vips[0],
+                            vips[-1],
+                            1,
+                            value=vips[5],
+                            id='vips-a1'
+                        )
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("Troop Type"),
+                dbc.CardBody(
+                    [
+                        dcc.Dropdown(troop_types, troop_types[0],style={"color": "black"})
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("Troop Tier"),
+                dbc.CardBody(
+                    [
+                        dcc.Dropdown(troop_tiers, troop_tiers[-1],style={"color": "black"})
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("Troop Count"),
+                dbc.CardBody(
+                    [
+                         dcc.Input(
+                            type='number',
+                            value=100000,
+                            min=min_troop_count,
+                            max=max_troop_count,
+                            step=1000
+                        ),
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("War Frenzy"),
+                dbc.CardBody(
+                    [
+                        dcc.RadioItems(['Yes', 'No'], 'No',  labelStyle={'display': 'block'}),
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("Barracks Level"),
+                dbc.CardBody(
+                    [
+                        dcc.Slider(
+                            int(buildings_levels[f"{buildings[0]}_min"]),
+                            int(buildings_levels[f"{buildings[0]}_max"]),
+                            1,
+                            value=int(buildings_levels[f"{buildings[0]}_max"]),
+                        ),
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("Stable Level"),
+                dbc.CardBody(
+                    [
+                        dcc.Slider(
+                            int(buildings_levels[f"{buildings[0]}_min"]),
+                            int(buildings_levels[f"{buildings[0]}_max"]),
+                            1,
+                            value=int(buildings_levels[f"{buildings[0]}_max"]),
+                        ),
+                    ],
+                ),
+            ], 
         ),
 
         html.Br(),
-        html.Label('Troop Type'),
-        dcc.Dropdown(troop_types, troop_types[0]),
-
-        html.Br(),
-        html.Label('Troop Tier'),
-        dcc.Dropdown(troop_tiers, troop_tiers[-1]),
-
-        html.Br(),
-        html.Label("Troop Count"),
-        dcc.Input(
-            type='number',
-            value=100000,
-            min=min_troop_count,
-            max=max_troop_count,
-            step=1000
+        dbc.Card(
+            [
+                dbc.CardHeader("Archery Range Level"),
+                dbc.CardBody(
+                    [
+                        dcc.Slider(
+                            int(buildings_levels[f"{buildings[0]}_min"]),
+                            int(buildings_levels[f"{buildings[0]}_max"]),
+                            1,
+                            value=int(buildings_levels[f"{buildings[0]}_max"]),
+                        ),
+                    ],
+                ),
+            ], 
         ),
         html.Br(),
-
-        html.Br(),
-        html.Label('War Frenzy'),
-        dcc.RadioItems(['Yes', 'No'], 'No'),
-
-        html.Br(),
-        html.Label(f"{buildings[0]} Level"),
-        dcc.Slider(
-            int(buildings_levels[f"{buildings[0]}_min"]),
-            int(buildings_levels[f"{buildings[0]}_max"]),
-            1,
-            value=int(buildings_levels[f"{buildings[0]}_max"]),
-        ),
-
-        html.Br(),
-        html.Label(f"{buildings[1]} Level"),
-        dcc.Slider(
-            int(buildings_levels[f"{buildings[1]}_min"]),
-            int(buildings_levels[f"{buildings[1]}_max"]),
-            1,
-            value=int(buildings_levels[f"{buildings[1]}_max"]),
-        ),
-
-        html.Br(),
-        html.Label(f"{buildings[2]} Level"),
-        dcc.Slider(
-            int(buildings_levels[f"{buildings[2]}_min"]),
-            int(buildings_levels[f"{buildings[2]}_max"]),
-            1,
-            value=int(buildings_levels[f"{buildings[2]}_max"]),
-        ),
-
-        html.Br(),
-        html.Label('Primary Commander'),
-        dcc.Dropdown(
-            commanders,
-            commanders[0],
-            id='primary-commander-a1'
-        ),
-
-        html.Br(),
-        html.Label("Level"),
-        dcc.Input(
-            type='number',
-            value=60,
-            min=min_level,
-            max=max_level,
-            step=1
+        dbc.Card(
+            [
+                dbc.CardHeader("Primary Commander"),
+                dbc.CardBody(
+                    [
+                        dcc.Dropdown(
+                            commanders,
+                            commanders[0],
+                            id='primary-commander-a1',
+                            style={"color": "black"}
+                        ),
+                        html.Br(),
+                        html.Label("Level "),
+                        dcc.Input(
+                            type='number',
+                            value=60,
+                            min=min_level,
+                            max=max_level,
+                            step=1
+                        ),
+                        
+                    ],
+                ),
+            ], 
         ),
         html.Br(),
-
-        html.Br(),
-        html.Label('Commander View'),
-        dcc.RadioItems(
-            commander_view,
-            commander_view[-1],
-            id="commander-view-c1-a1"
-        ),
-
-        html.Br(),
-        html.Label('Secondary Commander'),
-        dcc.Dropdown(
-            commanders+['None'],
-            commanders[1],
-            id='secondary-commander-a1'
-        ),
-
-        html.Br(),
-        html.Label(
-            "Level",
-            id='level-label-c2-a1'),
-        dcc.Input(
-            type='number',
-            value=60,
-            min=min_level,
-            max=max_level,
-            step=1,
-            id='level-c2-a1'
+        dbc.Card(
+            [
+                dbc.CardHeader("Commander View"),
+                dbc.CardBody(
+                    [
+                        dcc.RadioItems(
+                            commander_view,
+                            commander_view[-1],
+                            id="commander-view-c1-a1",
+                            labelStyle={'display': 'block'}
+                        ),
+                        
+                    ],
+                ),
+            ], 
         ),
         html.Br(),
-
-        html.Br(),
-        html.Label(
-            'Commander View',
-            id='commander-view-label-c2-a1'
+        dbc.Card(
+            [
+                dbc.CardHeader("Secondary Commander"),
+                dbc.CardBody(
+                    [
+                        dcc.Dropdown(
+                            commanders+['None'],
+                            commanders[1],
+                            id='secondary-commander-a1',
+                            style={"color": "black"}
+                        ),
+                        html.Br(),
+                        html.Label("Level ",id='level-label-c2-a1'),
+                        dcc.Input(
+                            type='number',
+                            value=60,
+                            min=min_level,
+                            max=max_level,
+                            step=1,
+                            id='level-c2-a1'
+                        ),
+                        
+                    ],
+                ),
+                dbc.CardHeader("Commander View", id='commander-view-label-c2-a1'),
+                dbc.CardBody(
+                    [
+                        dcc.RadioItems(
+                            commander_view,
+                            commander_view[-1],
+                            id="commander-view-c2-a1",
+                            labelStyle={'display': 'block'}
+                        )
+                        
+                    ],
+                ),
+            ], 
         ),
-        dcc.RadioItems(
-            commander_view,
-            commander_view[-1],
-            id="commander-view-c2-a1"
-        )
     ],
     style={'padding': 50, 'flex': 1}),
     
 ########################################################
 ######################## ARMY 2 ########################
 ########################################################
-
     html.Div(children=[
-        html.Label('Army 2'),
+        dbc.CardHeader("Army 2"),
         html.Br(),
 
         html.Br(),
-        html.Label('Civilization'),
-        dcc.Dropdown(civs, civs[0]),
-
+        dbc.Card(
+            [
+                dbc.CardHeader("Civilization"),
+                dbc.CardBody(
+                    [
+                        dcc.Dropdown(civs, civs[0])
+                    ],
+                ),
+            ], 
+        ),
         html.Br(),
-        html.Label('VIP Level'),
-        dcc.Slider(
-            vips[0],
-            vips[-1],
-            1,
-            value=vips[5],
-            id='vips-a2'
+        dbc.Card(
+            [
+                dbc.CardHeader("VIP Level"),
+                dbc.CardBody(
+                    [
+                        dcc.Slider(
+                            vips[0],
+                            vips[-1],
+                            1,
+                            value=vips[5],
+                            id='vips-a2'
+                        )
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("Troop Type"),
+                dbc.CardBody(
+                    [
+                        dcc.Dropdown(troop_types, troop_types[0],style={"color": "black"})
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("Troop Tier"),
+                dbc.CardBody(
+                    [
+                        dcc.Dropdown(troop_tiers, troop_tiers[-1],style={"color": "black"})
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("Troop Count"),
+                dbc.CardBody(
+                    [
+                         dcc.Input(
+                            type='number',
+                            value=100000,
+                            min=min_troop_count,
+                            max=max_troop_count,
+                            step=1000
+                        ),
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("War Frenzy"),
+                dbc.CardBody(
+                    [
+                        dcc.RadioItems(['Yes', 'No'], 'No',  labelStyle={'display': 'block'}),
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("Barracks Level"),
+                dbc.CardBody(
+                    [
+                        dcc.Slider(
+                            int(buildings_levels[f"{buildings[0]}_min"]),
+                            int(buildings_levels[f"{buildings[0]}_max"]),
+                            1,
+                            value=int(buildings_levels[f"{buildings[0]}_max"]),
+                        ),
+                    ],
+                ),
+            ], 
+        ),
+        html.Br(),
+        dbc.Card(
+            [
+                dbc.CardHeader("Stable Level"),
+                dbc.CardBody(
+                    [
+                        dcc.Slider(
+                            int(buildings_levels[f"{buildings[0]}_min"]),
+                            int(buildings_levels[f"{buildings[0]}_max"]),
+                            1,
+                            value=int(buildings_levels[f"{buildings[0]}_max"]),
+                        ),
+                    ],
+                ),
+            ], 
         ),
 
         html.Br(),
-        html.Label('Troop Type'),
-        dcc.Dropdown(troop_types, troop_types[0]),
-
-        html.Br(),
-        html.Label('Troop Tier'),
-        dcc.Dropdown(troop_tiers, troop_tiers[-1]),
-
-        html.Br(),
-        html.Label("Troop Count"),
-        dcc.Input(
-            type='number',
-            value=100000,
-            min=min_troop_count,
-            max=max_troop_count,
-            step=1000
+        dbc.Card(
+            [
+                dbc.CardHeader("Archery Range Level"),
+                dbc.CardBody(
+                    [
+                        dcc.Slider(
+                            int(buildings_levels[f"{buildings[0]}_min"]),
+                            int(buildings_levels[f"{buildings[0]}_max"]),
+                            1,
+                            value=int(buildings_levels[f"{buildings[0]}_max"]),
+                        ),
+                    ],
+                ),
+            ], 
         ),
         html.Br(),
-
-        html.Br(),
-        html.Label('War Frenzy'),
-        dcc.RadioItems(['Yes', 'No'], 'No'),
-
-        html.Br(),
-        html.Label(f"{buildings[0]} Level"),
-        dcc.Slider(
-            int(buildings_levels[f"{buildings[0]}_min"]),
-            int(buildings_levels[f"{buildings[0]}_max"]),
-            1,
-            value=int(buildings_levels[f"{buildings[0]}_max"]),
-        ),
-
-        html.Br(),
-        html.Label(f"{buildings[1]} Level"),
-        dcc.Slider(
-            int(buildings_levels[f"{buildings[1]}_min"]),
-            int(buildings_levels[f"{buildings[1]}_max"]),
-            1,
-            value=int(buildings_levels[f"{buildings[1]}_max"]),
-        ),
-
-        html.Br(),
-        html.Label(f"{buildings[2]} Level"),
-        dcc.Slider(
-            int(buildings_levels[f"{buildings[2]}_min"]),
-            int(buildings_levels[f"{buildings[2]}_max"]),
-            1,
-            value=int(buildings_levels[f"{buildings[2]}_max"]),
-        ),
-
-        html.Br(),
-        html.Label('Primary Commander'),
-        dcc.Dropdown(
-            commanders,
-            commanders[0],
-            id='primary-commander-a2'
-        ),
-
-        html.Br(),
-        html.Label("Level"),
-        dcc.Input(
-            type='number',
-            value=60,
-            min=min_level,
-            max=max_level,
-            step=1
+        dbc.Card(
+            [
+                dbc.CardHeader("Primary Commander"),
+                dbc.CardBody(
+                    [
+                        dcc.Dropdown(
+                            commanders,
+                            commanders[0],
+                            id='primary-commander-a2',
+                            style={"color": "black"}
+                        ),
+                        html.Br(),
+                        html.Label("Level "),
+                        dcc.Input(
+                            type='number',
+                            value=60,
+                            min=min_level,
+                            max=max_level,
+                            step=1
+                        ),
+                        
+                    ],
+                ),
+            ], 
         ),
         html.Br(),
-
-        html.Br(),
-        html.Label('Commander View'),
-        dcc.RadioItems(
-            commander_view,
-            commander_view[-1],
-            id="commander-view-c1-a2"
-        ),
-
-        html.Br(),
-        html.Label('Secondary Commander'),
-        dcc.Dropdown(
-            commanders+['None'],
-            commanders[1],
-            id='secondary-commander-a2'
-        ),
-
-        html.Br(),
-        html.Label(
-            "Level",
-            id='level-label-c2-a2'),
-        dcc.Input(
-            type='number',
-            value=60,
-            min=min_level,
-            max=max_level,
-            step=1,
-            id='level-c2-a2'
+        dbc.Card(
+            [
+                dbc.CardHeader("Commander View"),
+                dbc.CardBody(
+                    [
+                        dcc.RadioItems(
+                            commander_view,
+                            commander_view[-1],
+                            id="commander-view-c1-a2",
+                            labelStyle={'display': 'block'}
+                        ),
+                        
+                    ],
+                ),
+            ], 
         ),
         html.Br(),
-
-        html.Br(),
-        html.Label(
-            'Commander View',
-            id='commander-view-label-c2-a2'
+        dbc.Card(
+            [
+                dbc.CardHeader("Secondary Commander"),
+                dbc.CardBody(
+                    [
+                        dcc.Dropdown(
+                            commanders+['None'],
+                            commanders[1],
+                            id='secondary-commander-a2',
+                            style={"color": "black"}
+                        ),
+                        html.Br(),
+                        html.Label("Level ",id='level-label-c2-a2'),
+                        dcc.Input(
+                            type='number',
+                            value=60,
+                            min=min_level,
+                            max=max_level,
+                            step=1,
+                            id='level-c2-a2'
+                        ),
+                        
+                    ],
+                ),
+                dbc.CardHeader("Commander View", id='commander-view-label-c2-a2'),
+                dbc.CardBody(
+                    [
+                        dcc.RadioItems(
+                            commander_view,
+                            commander_view[-1],
+                            id="commander-view-c2-a2",
+                            labelStyle={'display': 'block'}
+                        )
+                        
+                    ],
+                ),
+            ], 
         ),
-        dcc.RadioItems(
-            commander_view,
-            commander_view[-1],
-            id="commander-view-c2-a2"
-        )
+
     ],
-
-     style={'padding': 50, 'flex': 1})
+    style={'padding': 50, 'flex': 1}),
 
 ], style={
     'display': 'flex',
