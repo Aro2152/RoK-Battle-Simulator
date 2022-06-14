@@ -1,0 +1,115 @@
+{
+    "Trick or Treat":{
+        "attack":{
+            "infantry": 5
+        },
+        "health": {
+            "archer": -5
+        }
+    },
+    "Sower's Song":{
+        "attack":{
+            "cavalry": 5
+        },
+        "health": {
+            "archer": -5
+        }
+    },
+    "Silent Night":{
+        "attack":{
+            "archer": 5
+        },
+        "health": {
+            "infantry": -5
+        }
+    },
+    "Cupid's Arrow":{
+        "health": {
+            "infantry": 5,
+            "cavalry": -5
+        }
+    },
+    "Spring Blossoms":{
+        "health": {
+            "infantry": -5,
+            "cavalry": 5
+        }
+    },
+    "No Place Like Home":{
+        "health": {
+            "archer": 5,
+            "cavalry": -5
+        }
+    },
+    "Twilight Falls":{
+        "skill damage": 5,
+        "commander exp gain": 5,
+        "attack":{
+            "infantry":-5
+        }
+    },
+    "Babylonian Gardens":{
+        "attack":{
+            "infantry": 10
+        },
+        "defense":{
+            "cavalry": -5
+        },
+        "health": {
+            "archer": -5
+        }
+    },
+    "Frozen City":{
+        "attack":{
+            "cavalry": -5
+        },
+        "defense":{
+            "archer": 5
+        }
+    },
+    "Temple of Vishnu":{
+        "defense":{
+            "cavalry": -5
+        },
+        "health": {
+            "infantry": 5
+        }
+    },
+    "Heliopolis":{
+        "attack": 3,
+        "traning speed": 3,
+        "defense": {
+            "archer": -10
+        }
+    },
+    "Gift of the Nile":{
+        "attack":{
+            "archer": 5
+        },
+        "defense":{
+            "infantry": -5
+        }
+    },
+    "Magpie Bridge":{
+        "defense":{
+            "archer": -5
+        },
+        "health": {
+            "cavalry": 5
+        }
+    },
+    "Persian dream":{
+        "healing speed": 3,
+        "defense": 3,
+        "attack": {
+            "cavalry": -10
+        }
+    },
+    "Joyful Fest":{
+        "defense":{
+            "infantry": 5,
+            "cavalry": -5
+        }
+    }
+
+}
