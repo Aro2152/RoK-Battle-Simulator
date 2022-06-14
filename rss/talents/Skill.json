@@ -64,7 +64,8 @@
                     2, 4, 6
             ]
         },
-        "condition": ["after_primary_active_skill"]
+        "condition": ["after_primary_active_skill"],
+        "duration": 3
     },
 
     "Tactical_Mastery": {

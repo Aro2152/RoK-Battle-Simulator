@@ -2,8 +2,8 @@
     "March_Speed_1": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "march_speed": [3]
+            "march_speed": {
+                "cavalry": [3]
             }
         }
     },
@@ -11,8 +11,8 @@
     "Attack_1": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "attack": [1, 2]
+            "attack": {
+                "cavalry": [1, 2]
             }
         }    
     },
@@ -20,8 +20,8 @@
     "Defense_1": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "defense": [1, 2]
+            "defense": {
+                "cavalry": [1, 2]
             }
         }    
     },
@@ -29,8 +29,8 @@
     "Health_1": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "health": [1, 2]
+            "health": {
+                "cavalry": [1, 2]
             }
         }    
     },
@@ -67,8 +67,8 @@
     "Galea": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "health": [
+            "health": {
+                "cavalry": [
                     3, 6, 9
                 ]
             }
@@ -78,8 +78,8 @@
     "Attack_2": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "attack": [1]
+            "attack": {
+                "cavalry": [1]
             }
         }    
     },
@@ -87,8 +87,8 @@
     "Attack_3": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "attack": [
+            "attack": {
+                "cavalry": [
                     1, 2, 3
                 ]
             }
@@ -98,8 +98,8 @@
     "Defense_2": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "defense": [
+            "defense": {
+                "cavalry": [
                     1, 2, 3
                 ]
             }
@@ -109,8 +109,8 @@
     "March_Speed_2": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "marche_speed": [
+            "march_speed": {
+                "cavalry": [
                     3, 6
                 ]
             }
@@ -120,8 +120,8 @@
     "Health_2": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "health": [1]
+            "health": {
+                "cavalry": [1]
             }
         }    
     },
@@ -129,8 +129,8 @@
     "March_Speed_3": {
         "category": "simple",
         "buffs": {
-            "cavalry": {
-                "march_speed": [
+            "march_speed": {
+                "cavalry": [
                     3, 6
                 ]
             }

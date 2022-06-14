@@ -27,18 +27,18 @@ class Battle_Simulator():
                     Secondary Commander: Lvl {army.secondary_commander['level']} {army.secondary_commander['name']} {army.secondary_commander['skills_levels']}\n\
                     \n\
                     Troop Buffs:\n\
-                        Infantry Attack:  {colors.YELLOW}{army.total_buffs['infantry']['attack']}%{colors.ENDC}\n\
-                        Infantry Defense: {colors.YELLOW}{army.total_buffs['infantry']['defense']}%{colors.ENDC}\n\
-                        Infantry Health:  {colors.YELLOW}{army.total_buffs['infantry']['health']}%{colors.ENDC}\n\
-                        Cavalry Attack:   {colors.YELLOW}{army.total_buffs['cavalry']['attack']}%{colors.ENDC}\n\
-                        Cavalry Defense:  {colors.YELLOW}{army.total_buffs['cavalry']['defense']}%{colors.ENDC}\n\
-                        Cavalry Health:   {colors.YELLOW}{army.total_buffs['cavalry']['health']}%{colors.ENDC}\n\
-                        Archer Attack:    {colors.YELLOW}{army.total_buffs['archer']['attack']}%{colors.ENDC}\n\
-                        Archer Defense:   {colors.YELLOW}{army.total_buffs['archer']['defense']}%{colors.ENDC}\n\
-                        Archer Health:    {colors.YELLOW}{army.total_buffs['archer']['health']}%{colors.ENDC}\n\
-                        Siege Attack:     {colors.YELLOW}{army.total_buffs['siege']['attack']}%{colors.ENDC}\n\
-                        Siege Defense:    {colors.YELLOW}{army.total_buffs['siege']['defense']}%{colors.ENDC}\n\
-                        Siege Health:     {colors.YELLOW}{army.total_buffs['siege']['health']}%{colors.ENDC}\n\
+                        Infantry Attack:  {colors.YELLOW}{army.total_buffs['attack']['infantry']}%{colors.ENDC}\n\
+                        Infantry Defense: {colors.YELLOW}{army.total_buffs['defense']['infantry']}%{colors.ENDC}\n\
+                        Infantry Health:  {colors.YELLOW}{army.total_buffs['health']['infantry']}%{colors.ENDC}\n\
+                        Cavalry Attack:   {colors.YELLOW}{army.total_buffs['attack']['cavalry']}%{colors.ENDC}\n\
+                        Cavalry Defense:  {colors.YELLOW}{army.total_buffs['defense']['cavalry']}%{colors.ENDC}\n\
+                        Cavalry Health:   {colors.YELLOW}{army.total_buffs['health']['cavalry']}%{colors.ENDC}\n\
+                        Archer Attack:    {colors.YELLOW}{army.total_buffs['attack']['archer']}%{colors.ENDC}\n\
+                        Archer Defense:   {colors.YELLOW}{army.total_buffs['defense']['archer']}%{colors.ENDC}\n\
+                        Archer Health:    {colors.YELLOW}{army.total_buffs['health']['archer']}%{colors.ENDC}\n\
+                        Siege Attack:     {colors.YELLOW}{army.total_buffs['attack']['siege']}%{colors.ENDC}\n\
+                        Siege Defense:    {colors.YELLOW}{army.total_buffs['defense']['siege']}%{colors.ENDC}\n\
+                        Siege Health:     {colors.YELLOW}{army.total_buffs['health']['siege']}%{colors.ENDC}\n\
                     Additional Buffs:\n\
                         Damage:                   {colors.YELLOW}{army.total_buffs['damage']}%{colors.ENDC}\n\
                         Skill Damage:             {colors.YELLOW}{army.total_buffs['skill_damage']}%{colors.ENDC}\n\
