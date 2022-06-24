@@ -2,7 +2,11 @@
     "Attack_1": {
         "category": "simple",
         "buffs": {
-            "attack": [0.5]
+            "attack": {
+                "all": [
+                    0.5
+                ]
+            }
         }
     },
 
@@ -28,23 +32,33 @@
     "Defense_1": {
         "category": "simple",
         "buffs": {
-            "defense": [
-                0.5, 1, 1.5
-            ]
+            "defense": {
+                "all": [
+                    0.5, 1, 1.5
+                ]
+            }
         }
     },
 
     "Defense_2": {
         "category": "simple",
         "buffs": {
-            "defense": [0.5]
+            "defense": {
+                "all": [
+                    0.5
+                ]
+            }
         }
     },
 
     "Attack_2": {
         "category": "simple",
         "buffs": {
-            "attack": [0.5]
+            "attack": {
+                "all": [
+                    0.5
+                ]
+            }
         }
     },
 
@@ -80,54 +94,66 @@
     "Health_1": {
         "category": "simple",
         "buffs": {
-            "health": [
+            "health": {
+                "all": [
                 0.5, 1
-            ]
+                ]
+            }
         }
     },
 
     "Defense_3": {
         "category": "simple",
         "buffs": {
-            "defense": [
-                0.5, 1
-            ]
+            "defense": {
+                "all": [
+                    0.5, 1
+                ]
+            }
         }
     },
 
     "Health_2": {
         "category": "simple",
         "buffs": {
-            "defense": [
-                0.5, 1
-            ]
+            "defense": {
+                "all": [
+                    0.5, 1
+                ]
+            }
         }
     },
 
     "Health_3": {
         "category": "simple",
         "buffs": {
-            "health": [
-                0.5, 1
-            ]
+            "health": {
+                "all": [
+                    0.5, 1
+                ]
+            }
         }
     },
 
     "Attack_3": {
         "category": "simple",
         "buffs": {
-            "attack": [
-                0.5, 1, 1.5
-            ]
+            "attack": {
+                "all": [
+                    0.5, 1, 1.5
+                ]
+            }
         }
     },
 
     "March_Speed_1": {
         "category": "simple",
         "buffs": {
-            "march_speed": [
-                3, 6
-            ]
+            "march_speed": {
+                "all": [
+                    3, 6
+                ]
+            }
         }
     },
 

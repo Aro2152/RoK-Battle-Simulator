@@ -2,6 +2,7 @@
 # Copyright (C) 2022 Aro2152
 
 import json
+from commander import Commander
 
 class Army():
     def __init__(
@@ -10,55 +11,65 @@ class Army():
         self.army_info = army_info
         self.troop_count = army_info["troop_count"]
 
-        self.primary_commander = army_info["primary_commander"]
+        # Load commanders
+        primary_commander_info = army_info["primary_commander"]
+        self.primary_commander = Commander(
+            primary_commander_info["name"],
+            primary_commander_info["level"],
+            primary_commander_info["talents_levels"],
+            primary_commander_info["skills_levels"]
+        )
+
         # Check for secondary commander
         if "secondary_commander" in army_info:
-            self.secondary_commander = army_info["secondary_commander"]
+            secondary_commander_info = army_info["secondary_commander"]
+            self.secondary_commander = Commander(
+                secondary_commander_info["name"],
+                secondary_commander_info["level"],
+                secondary_commander_info["talents_levels"],
+                secondary_commander_info["sklls_levels"]
+            )
         else:
-            self.secondary_commander = {
-                "name": None,
-                "level": None,
-                "skills_levels": None
-            }
+            self.secondary_commander = None
 
         # Init the buffs at 0
         self.buffs = {
             "attack": {
-                "all": 0,
+                "all":      0,
                 "infantry": 0,
-                "cavalry": 0,
-                "archer": 0,
-                "siege": 0
+                "cavalry":  0,
+                "archer":   0,
+                "siege":    0
             },
             "defense": {
-                "all": 0,
+                "all":      0,
                 "infantry": 0,
-                "cavalry": 0,
-                "archer": 0,
-                "siege": 0
+                "cavalry":  0,
+                "archer":   0,
+                "siege":    0
             },
             "health": {
-                "all": 0,
+                "all":      0,
                 "infantry": 0,
-                "cavalry": 0,
-                "archer": 0,
-                "siege": 0
+                "cavalry":  0,
+                "archer":   0,
+                "siege":    0
             },
             "march_speed": {
-                "all": 0,
+                "all":      0,
                 "infantry": 0,
-                "cavalry": 0,
-                "archer": 0,
-                "siege": 0
+                "cavalry":  0,
+                "archer":   0,
+                "siege":    0
             },
-            "damage":  0,
-            "skill_damage": 0,
-            "additional_skill_damage": 0,  # e.g. Kusunoki's active skill
+            "damage":                    0,
+            "skill_damage":              0,
+            "additional_skill_damage":   0,  # e.g. Kusunoki's active skill
             "reduce_damage_taken":       0,
             "reduce_skill_damage_taken": 0,
-            "normal_attack_damage":   0,
-            "counter_attack_damage":  0,
-            "damage_to_barbarians": 0
+            "normal_attack_damage":      0,
+            "counter_attack_damage":     0,
+            "damage_to_barbarians":      0
         }
 
         self.rage = 0
@@ -168,23 +179,19 @@ class Army():
 
 
     def add_talents_buffs(self):
-        for talent_cat in self.primary_commander["talents_levels"]:
-            talents_levels = self.primary_commander["talents_levels"][talent_cat]
-            talents = json.load(open(f"../rss/talents/{talent_cat}.json"))
-            for talent in talents_levels:
-                level = talents_levels[talent] - 1
-                if talents[talent]["category"] == "simple":
-                    talent_buffs = talents[talent]["buffs"]
+        for talent_cat in self.primary_commander.talents:
+            for talent_name in self.primary_commander.talents[talent_cat]: 
+                talent = self.primary_commander.talents[talent_cat][talent_name]
+                if talent["category"] == "simple":
+                    talent_buffs = talent["buffs"]
                     for stat in talent_buffs:
                         if isinstance(talent_buffs[stat], dict):
                             for tt in talent_buffs[stat]:
-                                self.buffs[stat][tt] += talent_buffs[stat][tt][level]
+                                self.buffs[stat][tt] += talent_buffs[stat][tt]
                         else:
-                            if stat in self.categories["stat_types"]:
-                                self.buffs[stat]["all"] += talent_buffs[stat][level]
-                            else:
-                                self.buffs[stat] += talent_buffs[stat][level]
+                            self.buffs[stat] += talent_buffs[stat]
    
+
     def add_commander_view_buffs(self):
         buffs = json.load(open("../rss/commander_view.json"))
         for buff_name in self.army_info["commander_view"]:
@@ -193,27 +200,22 @@ class Army():
 
    
     def add_skills_buffs(self):
-        self.active_skills = []
         stat_buffs = self.categories["stat_buffs"]
-        for commander in ["primary_commander", "secondary_commander"]:
-            if commander in self.army_info:
-                name = self.army_info[commander]["name"]
-                skills_levels = self.army_info[commander]["skills_levels"]
-                commander_info = json.load(open(f"../rss/commanders/{name}.json"))
-                for i, skill in enumerate(commander_info["skills"]):
-                    if skills_levels[i] > 0:
-                        for buff in commander_info["skills"][skill]["buffs"]:
-                            skill_buffs = commander_info["skills"][skill]["buffs"][buff]
-                            if ("probability" not in skill_buffs and
-                                "condition" not in skill_buffs and
-                                "duration" not in skill_buffs):
-                                for stat in skill_buffs:
-                                    if stat in stat_buffs:
-                                        if isinstance(skill_buffs[stat], dict):
-                                            for tt in skill_buffs[stat]:
-                                                self.buffs[stat][tt] += skill_buffs[stat][tt][skills_levels[i]-1]
-                                        else:
-                                            self.buffs[stat]["all"] += skill_buffs[stat][skills_levels[i]-1]
+        for commander in [self.primary_commander, self.secondary_commander]:
+            if commander:
+                for skill in commander.skills:
+                    for buff in commander.skills[skill]["buffs"]:
+                        skill_buffs = commander.skills[skill]["buffs"][buff]
+                        if ("probability" not in skill_buffs and
+                            "condition" not in skill_buffs and
+                            "duration" not in skill_buffs):
+                            for stat in skill_buffs:
+                                if stat in stat_buffs:
+                                    if isinstance(skill_buffs[stat], dict):
+                                        for tt in skill_buffs[stat]:
+                                            self.buffs[stat][tt] += skill_buffs[stat][tt]
+                                    else:
+                                        self.buffs[stat] += skill_buffs[stat]
 
 
     def add_civ_buffs(self):
