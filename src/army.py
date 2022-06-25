@@ -3,11 +3,12 @@
 
 import json
 from commander import Commander
+from buff import Buff
 
 class Army():
     def __init__(
-        self, army_info
-    ):
+        self, army_info):
+
         self.army_info = army_info
         self.troop_count = army_info["troop_count"]
 
@@ -82,6 +83,12 @@ class Army():
 
         self.total_buffs = self.get_summed_buffs()
         self.buffed_stats =  self.get_buffed_stats()
+
+        self.active_buffs = []
+        self.inactive_buffs = []
+
+        self.fill_inactive_talents()
+        self.fill_inactive_skills()
 
     
     # Loads the stats for the troops based on tier and special units
@@ -243,3 +250,83 @@ class Army():
         for lvl in range(self.army_info["vip_level"]+1):
             for stat in vip_buffs[str(lvl)]:
                 self.buffs[stat]["all"] += vip_buffs[str(lvl)][stat]
+
+
+    def fill_inactive_talents(self):
+        for talent_cat in self.primary_commander.talents:
+            for talent_name in self.primary_commander.talents[talent_cat]:
+                talent = self.primary_commander.talents[talent_cat][talent_name]
+                if talent["category"] == "complex":
+                    if "condition" in talent:
+                        condition = talent["condition"]
+                    else:
+                        condition = None
+                    if "duration" in talent:
+                        duration = talent["duration"]
+                    else:
+                        duration = None
+                    if "probability" in talent:
+                        probability = talent["probability"]
+                    else:
+                        probability = None
+                    if "cooldown" in talent:
+                        cooldown = talent["cooldown"]
+                    else:
+                        cooldown = None
+
+                    b = Buff(
+                        talent_name,
+                        talent["buffs"],
+                        condition,
+                        duration,
+                        probability,
+                        cooldown
+                    )
+                    self.inactive_buffs.append(b)
+    
+    
+    def fill_inactive_skills(self):
+        for commander in [self.primary_commander, self.secondary_commander]:
+            if commander:
+                for skill_name in commander.skills:
+                    skill = commander.skills[skill_name]
+                    for buff_name in skill["buffs"]:
+                        buff = skill["buffs"][buff_name]
+                        for k in buff:
+                            condition = None
+                            duration = None
+                            probability = None
+                            cooldown = None
+                            if k not in [
+                                    "condition",
+                                    "duration",
+                                    "probability"
+                                    "cooldown"]:
+                                actual_buff = buff[k]
+                            elif k == "condition":
+                                condition = buff[k]
+                            elif k == "duration":
+                                duration = buff[k]
+                            elif k == "probability":
+                                probability = buff[k]
+                            elif k == cooldown:
+                                cooldown = buff[k]
+
+                        if not condition and\
+                            not duration and\
+                            not probability and\
+                            not cooldown:
+                            # This means that this skill buff is always active
+                            # and has already been added
+                            pass
+
+                        b = Buff(
+                            buff_name,
+                            actual_buff,
+                            condition,
+                            duration,
+                            probability,
+                            cooldown,
+                            skill_name
+                        )
+                        self.inactive_buffs.append(b)
