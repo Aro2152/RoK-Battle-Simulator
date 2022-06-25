@@ -52,14 +52,16 @@ class Battle_Simulator():
                         Siege Defense:    {colors.YELLOW}{army.total_buffs['defense']['siege']}%{colors.ENDC}\n\
                         Siege Health:     {colors.YELLOW}{army.total_buffs['health']['siege']}%{colors.ENDC}\n\
                     Additional Buffs:\n\
-                        Damage:                   {colors.YELLOW}{army.total_buffs['damage']}%{colors.ENDC}\n\
-                        Skill Damage:             {colors.YELLOW}{army.total_buffs['skill_damage']}%{colors.ENDC}\n\
-                        Additional Skill Damage:  {colors.YELLOW}{army.total_buffs['additional_skill_damage']}%{colors.ENDC}\n\
-                        Reduce Damage Taken:      {colors.YELLOW}{army.total_buffs['reduce_damage_taken']}%{colors.ENDC}\n\
-                        Reduce Skil Damage Taken: {colors.YELLOW}{army.total_buffs['reduce_skill_damage_taken']}%{colors.ENDC}\n\
-                        Normal Attack Damage:     {colors.YELLOW}{army.total_buffs['normal_attack_damage']}%{colors.ENDC}\n\
-                        Counter Attack Damage:    {colors.YELLOW}{army.total_buffs['counter_attack_damage']}%{colors.ENDC}\n\
-                        March Speed:              {colors.YELLOW}{army.total_buffs['march_speed']}%{colors.ENDC}\n\
+                        Damage:                             {colors.YELLOW}{army.total_buffs['damage']}%{colors.ENDC}\n\
+                        Skill Damage:                       {colors.YELLOW}{army.total_buffs['skill_damage']}%{colors.ENDC}\n\
+                        Additional Skill Damage:            {colors.YELLOW}{army.total_buffs['additional_skill_damage']}%{colors.ENDC}\n\
+                        Reduce Damage Taken:                {colors.YELLOW}{army.total_buffs['reduce_damage_taken']}%{colors.ENDC}\n\
+                        Reduce Skil Damage Taken:           {colors.YELLOW}{army.total_buffs['reduce_skill_damage_taken']}%{colors.ENDC}\n\
+                        Reduce Counter Attack Damage Taken: {colors.YELLOW}{army.total_buffs['reduce_counter_attack_damage_taken']}%{colors.ENDC}\n\
+                        Normal Attack Damage:               {colors.YELLOW}{army.total_buffs['normal_attack_damage']}%{colors.ENDC}\n\
+                        Counter Attack Damage:              {colors.YELLOW}{army.total_buffs['counter_attack_damage']}%{colors.ENDC}\n\
+                        Damage against Barbarians:          {colors.YELLOW}{army.total_buffs['damage_to_barbarians']}%{colors.ENDC}\n\
+                        March Speed:                        {colors.YELLOW}{army.total_buffs['march_speed']}%{colors.ENDC}\n\
                 ")
 
     # Start the combat simulation

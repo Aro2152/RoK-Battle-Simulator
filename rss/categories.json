@@ -1,14 +1,11 @@
 {
     "stat_buffs": [
-        "attack",
-        "defense",
-        "health",
-        "march_speed",
         "damage",
         "skill_damage",
         "additional_skill_damage",
         "reduce_damage_taken",
         "reduce_skill_damage_taken",
+        "reduce_counter_attack_damage_taken",
         "normal_attack_damage",
         "counter_attack_damage",
         "damage_to_barbarians"

@@ -62,14 +62,15 @@ class Army():
                 "archer":   0,
                 "siege":    0
             },
-            "damage":                    0,
-            "skill_damage":              0,
-            "additional_skill_damage":   0,  # e.g. Kusunoki's active skill
-            "reduce_damage_taken":       0,
-            "reduce_skill_damage_taken": 0,
-            "normal_attack_damage":      0,
-            "counter_attack_damage":     0,
-            "damage_to_barbarians":      0
+            "damage":                             0,
+            "skill_damage":                       0,
+            "additional_skill_damage":            0,  # e.g. Kusunoki's active skill
+            "reduce_damage_taken":                0,
+            "reduce_skill_damage_taken":          0,
+            "reduce_counter_attack_damage_taken": 0,
+            "normal_attack_damage":               0,
+            "counter_attack_damage":              0,
+            "damage_to_barbarians":               0
         }
 
         self.rage = 0
@@ -148,8 +149,6 @@ class Army():
                 if isinstance(self.buffs[stat], dict):
                     for tt in self.categories["troop_types"]:
                         all_stats[stat][tt] = self.buffs[stat][tt] + self.buffs[stat]["all"]
-                # else:
-                    # all_stats[buff_type]["all"] = self.buffs[buff_type]
             else:
                 all_stats[stat] = self.buffs[stat]
         return all_stats
@@ -200,7 +199,7 @@ class Army():
 
    
     def add_skills_buffs(self):
-        stat_buffs = self.categories["stat_buffs"]
+        stat_buffs = self.categories["stat_buffs"] + self.categories["stat_types"]
         for commander in [self.primary_commander, self.secondary_commander]:
             if commander:
                 for skill in commander.skills:
@@ -208,14 +207,14 @@ class Army():
                         skill_buffs = commander.skills[skill]["buffs"][buff]
                         if ("probability" not in skill_buffs and
                             "condition" not in skill_buffs and
-                            "duration" not in skill_buffs):
+                            "duration" not in skill_buffs and
+                            buff in stat_buffs):
                             for stat in skill_buffs:
-                                if stat in stat_buffs:
-                                    if isinstance(skill_buffs[stat], dict):
-                                        for tt in skill_buffs[stat]:
-                                            self.buffs[stat][tt] += skill_buffs[stat][tt]
-                                    else:
-                                        self.buffs[stat] += skill_buffs[stat]
+                                # if isinstance(skill_buffs[stat], dict):
+                                #     for tt in skill_buffs[stat]:
+                                #         self.buffs[stat][tt] += skill_buffs[stat][tt]
+                                # else:
+                                self.buffs[buff][stat] += skill_buffs[stat]
 
 
     def add_civ_buffs(self):
