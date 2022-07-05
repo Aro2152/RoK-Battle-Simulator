@@ -22,7 +22,8 @@
             "Cavalry": {
                 "March_Speed_1": 1,
                 "Attack_1": 2,
-                "Dragon_Saber": 2
+                "Dragon_Saber": 2,
+                "Halberd": 1
             }
         }
     },

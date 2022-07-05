@@ -11,18 +11,17 @@
         "name": "Markswoman",
         "level": 1,
         "skills_levels": [
-            1, 0, 5, 5
+            1, 0, 0, 3
         ],
         "talents_levels": {
-            "Skill": {
-                "Attack_1": 1,
-                "Burning_Blood": 3,
-                "Defense_1": 3
-            }
         }
     },
 
     "technologies_levels": {
+        "iron_working": 1,
+        "improved_fletching": 2,
+        "horsemanship": 1,
+        "flaming_projectile": 1
     },
     
     "city_skin": {
@@ -32,12 +31,12 @@
     },
 
     "military_buildings_levels": {
-        "barracks":      1,
-        "stable":        1,
-        "archery_range": 1
+        "barracks":      7,
+        "stable":        7,
+        "archery_range": 7
     },
     
-    "vip_level": 0,
+    "vip_level": 1,
     
     "war_frenzy": false,
     

@@ -1,43 +1,43 @@
 {
     "iron_working": {
-        "infantry": {
-            "attack": [1, 2, 4, 6, 8]
+        "attack": {
+            "infantry": [1, 2, 4, 6, 8]
         }
     },
     "improved_fletching": {
-        "archer": {
-            "attack": [1, 2, 4, 6, 8]
+        "attack": {
+            "archer": [1, 2, 4, 6, 8]
         }
     },
     "horsemanship": {
-        "cavalry": {
-            "attack": [1, 2, 4, 6, 8]
+        "attack": {
+            "cavalry": [1, 2, 4, 6, 8]
         }
     },
     "flaming_projectile": {
-        "siege": {
-            "attack": [1, 2, 4, 6, 8]
+        "attack": {
+            "siege": [1, 2, 4, 6, 8]
         }
     },
 
     "buckler": {
-        "infantry": {
-            "defense": [1, 2, 4, 6, 8]
+        "defense": {
+            "infantry": [1, 2, 4, 6, 8]
         }
     },
     "leather_armor": {
-        "archer": {
-            "defense": [1, 2, 4, 6, 8]
+        "defense": {
+            "archer": [1, 2, 4, 6, 8]
         }
     },
     "scale_armor": {
-        "cavalry": {
-            "defense": [1, 2, 4, 6, 8]
+        "defense": {
+            "cavalry": [1, 2, 4, 6, 8]
         }
     },
     "enhanced_axle": {
-        "siege": {
-            "defense": [1, 2, 4, 6, 8]
+        "defense": {
+            "siege": [1, 2, 4, 6, 8]
         }
     },
 
@@ -52,44 +52,44 @@
     },
 
     "wootz_steal": {
-        "infantry": {
-            "attack": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
+        "attack": {
+            "infantry": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
         }
     },
     "bodkin_arrows": {
-        "archer": {
-            "attack": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
+        "attack": {
+            "archer": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
         }
     },
     "stirrups": {
-        "cavalry": {
-            "attack": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
+        "attack": {
+            "cavalry": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
         }
     },
     "ballistics": {
-        "siege": {
-            "attack": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
+        "attack": {
+            "siege": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
         }
     },
 
     "scutum": {
-        "infantry": {
-            "defense": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
+        "defense": {
+            "infantry": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
         }
     },
     "pavise": {
-        "archer": {
-            "defense": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
+        "defense": {
+            "archer": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
         }
     },
     "plate_armor": {
-        "cavalry": {
-            "defense": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
+        "defense": {
+            "cavalry": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
         }
     },
     "heavy_frame": {
-        "siege": {
-            "defense": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
+        "defense": {
+            "siege": [1, 2, 3, 4, 5, 7, 9, 11, 14, 20]
         }
     },
 

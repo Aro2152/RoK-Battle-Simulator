@@ -3,110 +3,130 @@
         "infantry": {
             "attack":  62,
             "defense": 120,
-            "health":  120
+            "health":  120,
+            "march_speed": 5
         },
         "cavalry": {
             "attack":  60,
             "defense": 120,
-            "health":  120
+            "health":  120,
+            "march_speed": 5
         },
         "archer": {
             "attack":  60,
             "defense": 123,
-            "health":  120
+            "health":  120,
+            "march_speed": 5
         },
         "siege": {
             "attack":  60,
             "defense": 120,
-            "health":  120
+            "health":  120,
+            "march_speed": 5
         }
     },
     "T2": {
         "infantry": {
             "attack":  128,
             "defense": 125,
-            "health":  125
+            "health":  125,
+            "march_speed": 4
         },
         "cavalry": {
             "attack":  128,
             "defense": 128,
-            "health":  125
+            "health":  125,
+            "march_speed": 4
         },
         "archer": {
             "attack":  125,
             "defense": 128,
-            "health":  128
+            "health":  128,
+            "march_speed": 4
         },
         "siege": {
             "attack":  125,
             "defense": 128,
-            "health":  125
+            "health":  125,
+            "march_speed": 4
         }
     },
     "T3": {
         "infantry": {
             "attack":  163,
             "defense": 158,
-            "health":  155
+            "health":  155,
+            "march_speed": 3
         },
         "cavalry": {
             "attack":  163,
             "defense": 158,
-            "health":  155
+            "health":  155,
+            "march_speed": 3
         },
         "archer": {
             "attack":  158,
             "defense": 155,
-            "health":  163
+            "health":  163,
+            "march_speed": 3
         },
         "siege": {
             "attack":  163,
             "defense": 155,
-            "health":  155
+            "health":  155,
+            "march_speed": 3
         }
     },
     "T4": {
         "infantry": {
             "attack":  192,
             "defense": 192,
-            "health":  187
+            "health":  187,
+            "march_speed": 2
         },
         "cavalry": {
             "attack":  187,
             "defense": 192,
-            "health":  192
+            "health":  192,
+            "march_speed": 2
         },
         "archer": {
             "attack":  192,
             "defense": 192,
-            "health":  187
+            "health":  187,
+            "march_speed": 2
         },
         "siege": {
             "attack":  192,
             "defense": 192,
-            "health":  187
+            "health":  187,
+            "march_speed": 2
         }
     },
     "T5": {
         "infantry": {
             "attack":  220,
             "defense": 212,
-            "health":  216
+            "health":  216,
+            "march_speed": 1
         },
         "cavalry": {
             "attack":  220,
             "defense": 212,
-            "health":  216
+            "health":  216,
+            "march_speed": 1
         },
         "archer": {
             "attack":  220,
             "defense": 216,
-            "health":  212
+            "health":  212,
+            "march_speed": 1
         },
         "siege": {
             "attack":  220,
             "defense": 216,
-            "health":  212
+            "health":  212,
+            "march_speed": 1
         }
     }
 }
