@@ -76,7 +76,9 @@
         }
     },
     "Heliopolis":{
-        "attack": 3,
+        "attack": {
+            "all": 3
+        },
         "training speed": 3,
         "defense": {
             "archer": -10
@@ -100,7 +102,9 @@
     },
     "Persian dream":{
         "healing speed": 3,
-        "defense": 3,
+        "defense": {
+            "all": 3
+        },
         "attack": {
             "cavalry": -10
         }
@@ -182,7 +186,9 @@
     },
     "Lake Palace":{
         "training speed": 3,
-        "defense":3,
+        "defense":{
+            "all": 3
+        },
         "health": {
             "cavalry": -10
         }
@@ -260,7 +266,9 @@
         "defense":{
             "infantry": -10
         },
-        "health": 3
+        "health": {
+            "all": 3
+        }
     },
     "Glorious Siam":{
         "attack":{
@@ -279,7 +287,9 @@
         }
     },
     "Topkapi Palace":{
-        "attack":-3,
+        "attack":{
+            "all": -3
+        },
         "defense":{
             "archer": 10
         },
@@ -390,11 +400,167 @@
     },
     "Divine Lighthouse":{
         "training speed": 3,
+        "health": {
+            "all":3,
+            "archer": -10
+        }
+    },
+    "Island Fortress":{
+        "attack":{
+            "cavalry":-10
+        },
+        "damage to barbarians": 5,
+        "skill damage": 5
+    },
+    "City of Power":{
+        "healing speed": 3,
+        "health": {
+            "cavalry": 10,
+            "infantry": -10
+        }
+    },
+    "Nubian Longing":{
+        "attack":{
+            "infantry":-5
+        },
         "defense":{
-            "archer": -5
+            "archer": 5
+        }
+    },
+    "Ruins of Kom Ombo":{
+        "training speed": 3,
+        "defense":{
+            "all": 3
         },
         "health": {
-            
+            "infantry": -10
+        }
+    },
+    "Atlantis":{
+        "attack":{
+            "archer":-5
+        },
+        "defense":{
+            "cavalry": -5
+        },
+        "health": {
+            "infantry": 10
+        }
+    },
+    "Dynastic Conqueror":{
+        "attack":{
+            "cavalry":-5
+        },
+        "defense":{
+            "all": 8
+        },
+        "commander exp gain": 5
+    },
+    "Perfect Harmony":{
+        "defense":{
+            "archer": -5,
+            "infantry": 5
+        }
+    },
+    "Call of Eternity":{
+        "attack":{
+            "cavalry": 15,
+            "infantry": -5
+        },
+        "defense":{
+            "archer": -5
+        }
+    },
+    "Supreme Warrior":{
+        "attack":{
+            "infantry": 15,
+            "archer":-5
+        },
+        "defense":{
+            "cavalry": -5
+        }
+    },
+    "Default":{
+
+    },
+    "Lucky Lanterns":{
+        "attack":{
+            "cavalry":-5
+        },
+        "defense":{
+            "archer": 5
+        }
+    },
+    "Rare Exhibit":{
+        "attack":{
+            "cavalry": 5
+        },
+        "defense":{
+            "infantry": -5
+        }
+    },
+    "Blooming Court":{
+        "health": {
+            "archer": 5,
+            "infantry":5
+        }
+    },
+    "Firework City":{
+        "attack":{
+            "cavalry":-5,
+            "infantry":5
+        }
+    },
+    "All-Kingdom Carnival":{
+        "health": {
+            "infantry": 5,
+            "archer":-5
+        }
+    },
+    "Soul Villa":{
+        "defense":{
+            "cavalry": 5
+        },
+        "health": {
+            "infantry": -5
+        }
+    },
+    "Snow Carol":{
+        "attack":{
+            "cavalry": 5,
+            "infantry":-5
+        }
+    },
+    "Mighty Forest":{
+        "attack":{
+            "archer":-5
+        },
+        "health": {
+            "cavalry": -5
+        }
+    },
+    "Easter Party":{
+        "attack":{
+            "cavalry":-5
+        },
+        "health": {
+            "archer": 5
+        }
+    },
+    "Golden Eye":{
+        "defense":{
+            "cavalry": 5
+        },
+        "health": {
+            "archer": -5
+        }
+    },
+    "Harvest Hut":{
+        "attack":{
+            "archer": 5
+        },
+        "health": {
+            "cavalry": -5
         }
     }
 }
