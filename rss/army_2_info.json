@@ -3,7 +3,7 @@
 
     "troop_count": 900,
 
-    "troop_tier": "t1",
+    "troop_tier": "T1",
 
     "troop_type": "infantry",
 
@@ -11,8 +11,15 @@
         "name": "Markswoman",
         "level": 1,
         "skills_levels": [
-            1, 0, 0, 0
-        ]
+            1, 0, 5, 5
+        ],
+        "talents_levels": {
+            "Skill": {
+                "Attack_1": 1,
+                "Burning_Blood": 3,
+                "Defense_1": 3
+            }
+        }
     },
 
     "technologies_levels": {

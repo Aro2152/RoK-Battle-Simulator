@@ -1,0 +1,164 @@
+{
+    "Attack_1": {
+        "category": "simple",
+        "buffs": {
+            "attack": [0.5]
+        }
+    },
+
+    "Burning_Blood": {
+        "category": "complex",
+        "buffs": {
+            "rage": [
+                    3, 6, 9
+            ]
+        },
+        "condition": ["per_normal_attack"]
+    },
+
+    "Heraldic_Shield": {
+        "category": "simple",
+        "buffs": {
+            "reduce_skill_damage_taken": [
+                    2, 4, 6
+            ]
+        }
+    },
+
+    "Defense_1": {
+        "category": "simple",
+        "buffs": {
+            "defense": [
+                0.5, 1, 1.5
+            ]
+        }
+    },
+
+    "Defense_2": {
+        "category": "simple",
+        "buffs": {
+            "defense": [0.5]
+        }
+    },
+
+    "Attack_2": {
+        "category": "simple",
+        "buffs": {
+            "attack": [0.5]
+        }
+    },
+
+    "Latent_Power": {
+        "category": "simple",
+        "buffs": {
+            "additional_skill_damage": [
+                    2, 4, 6
+            ]
+        }
+    },
+
+    "All_For_One": {
+        "category": "complex",
+        "buffs": {
+            "skill_damage": [
+                    2, 4, 6
+            ]
+        },
+        "condition": ["after_primary_active_skill"]
+    },
+
+    "Tactical_Mastery": {
+        "category": "simple",
+        "buffs": {
+            "skill_damage": [
+                    1, 2, 3
+            ]
+        }
+    },
+
+    "Health_1": {
+        "category": "simple",
+        "buffs": {
+            "health": [
+                0.5, 1
+            ]
+        }
+    },
+
+    "Defense_3": {
+        "category": "simple",
+        "buffs": {
+            "defense": [
+                0.5, 1
+            ]
+        }
+    },
+
+    "Health_2": {
+        "category": "simple",
+        "buffs": {
+            "defense": [
+                0.5, 1
+            ]
+        }
+    },
+
+    "Health_3": {
+        "category": "simple",
+        "buffs": {
+            "health": [
+                0.5, 1
+            ]
+        }
+    },
+
+    "Attack_3": {
+        "category": "simple",
+        "buffs": {
+            "attack": [
+                0.5, 1, 1.5
+            ]
+        }
+    },
+
+    "March_Speed_1": {
+        "category": "simple",
+        "buffs": {
+            "march_speed": [
+                3, 6
+            ]
+        }
+    },
+
+    "Rejuvenate": {
+        "category": "complex",
+        "buffs": {
+            "rage": [
+                    20, 40, 60
+            ]
+        },
+        "condition": ["per_active_skill"]
+    },
+
+    "Clarity": {
+        "category": "complex",
+        "buffs": {
+            "damage": [
+                    2, 4, 6
+            ]
+        },
+        "condition": ["after_active_skill"],
+        "duration": 6
+    },
+
+    "Feral_Nature": {
+        "category": "complex",
+        "buffs": {
+            "rage": [
+                    20, 40, 60, 80, 100
+            ]
+        },
+        "condition": ["per_normal_attack"],
+        "probability": 10
+    }
+}

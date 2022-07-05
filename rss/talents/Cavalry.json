@@ -1,0 +1,193 @@
+{
+    "March_Speed_1": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "march_speed": [3]
+            }
+        }
+    },
+
+    "Attack_1": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "attack": [1, 2]
+            }
+        }    
+    },
+
+    "Defense_1": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "defense": [1, 2]
+            }
+        }    
+    },
+
+    "Health_1": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "health": [1, 2]
+            }
+        }    
+    },
+
+    "Dragon_Saber": {
+        "category": "simple",
+        "buffs": {
+            "normal_attack_damage": [
+                0.5, 1, 1.5
+            ]
+        }    
+    }, 
+
+    "Halberd": {
+        "category": "complex",
+        "buffs": {
+            "damage": [
+                3, 6, 9
+            ]
+        }, 
+        "condition": ["only_to_archer"]  
+    },
+
+    "Charge": {
+        "category": "complex",
+        "buffs": {
+            "march_speed": [
+                10, 20, 30
+            ]
+        },
+        "condition": ["self_less_than_50_strength"]
+    },
+
+    "Galea": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "health": [
+                    3, 6, 9
+                ]
+            }
+        }
+    },
+
+    "Attack_2": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "attack": [1]
+            }
+        }    
+    },
+
+    "Attack_3": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "attack": [
+                    1, 2, 3
+                ]
+            }
+        }    
+    },
+
+    "Defense_2": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "defense": [
+                    1, 2, 3
+                ]
+            }
+        }    
+    },
+
+    "March_Speed_2": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "marche_speed": [
+                    3, 6
+                ]
+            }
+        }    
+    },
+
+    "Health_2": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "health": [1]
+            }
+        }    
+    },
+
+    "March_Speed_3": {
+        "category": "simple",
+        "buffs": {
+            "cavalry": {
+                "march_speed": [
+                    3, 6
+                ]
+            }
+        }    
+    },
+
+    "Undying_Fury": {
+        "category": "complex",
+        "buffs": {
+            "rage": [
+                    3, 6, 9
+            ]
+        },
+        "condition": ["per_normal_attack"]
+    },
+
+    "Disarm": {
+        "category": "complex",
+        "buffs": {
+            "reduce_enemy_attack": [
+                    5, 10, 15, 20
+            ]
+        },
+        "condition": ["per_normal_attack"],
+        "duration": 2,
+        "probability": 10 
+    },
+
+    "Emblazoned_Shield": {
+        "category": "simple",
+        "buffs": {
+            "reduce_skill_damage_taken": [
+                    3, 6, 9, 12
+            ]
+        }
+    },
+
+    "Equestrian_Excellence": {
+        "category": "complex",
+        "buffs": {
+            "march_speed": [
+                    5, 10, 15
+            ]
+        },
+        "condition": ["per_normal_attack"],
+        "duration": 2,
+        "probability": 10 
+    },
+
+    "Rallying_Cry": {
+        "category": "complex",
+        "buffs": {
+            "damage": [
+                    3, 6, 9, 12, 15
+            ]
+        },
+        "condition": ["beggining"],
+        "duration": 10
+    }
+}

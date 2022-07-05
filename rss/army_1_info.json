@@ -3,7 +3,7 @@
 
     "troop_count": 600,
 
-    "troop_tier": "t1",
+    "troop_tier": "T1",
 
     "troop_type": "infantry",
 
@@ -12,7 +12,19 @@
         "level": 5,
         "skills_levels": [
             1, 0, 0, 0, 0
-        ]
+        ],
+        "talents_levels": {
+            "Skill": {
+                "Attack_1": 1,
+                "Burning_Blood": 3,
+                "Defense_1": 3
+            },
+            "Cavalry": {
+                "March_Speed_1": 1,
+                "Attack_1": 2,
+                "Dragon_Saber": 2
+            }
+        }
     },
 
     "technologies_levels": {
