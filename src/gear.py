@@ -29,7 +29,8 @@ class GearPiece():
     
     
     def load(self):
-        raise PieceDoesNotExist(self.name, self.type)
+        pass
+        # raise PieceDoesNotExist(self.name, self.type)
 
 
 class GearHelmPiece(GearPiece):
@@ -176,7 +177,7 @@ class PieceDoesNotExist(Exception): # Throw this when a piece is unknown at runt
 def main():
     test = Gear(helm_crit=True, legs_iconic=True, boots_name="Custom_name")
     print(test)
-
+    
 
 if __name__=='__main__':
     main()
