@@ -12,7 +12,7 @@
 		}
 	},
 	"Alhambra Palace": {
-		"training speed": 3,
+		"training_speed": 3,
 		"defense": {
 			"infantry": -10
 		},
@@ -81,7 +81,7 @@
 		}
 	},
 	"City of Power": {
-		"healing speed": 3,
+		"healing_speed": 3,
 		"health": {
 			"cavalry": 10,
 			"infantry": -10
@@ -109,7 +109,7 @@
 		}
 	},
 	"Divine Lighthouse": {
-		"training speed": 3,
+		"training_speed": 3,
 		"health": {
 			"all": 3,
 			"archer": -10
@@ -130,7 +130,7 @@
 		"defense": {
 			"all": 8
 		},
-		"commander exp gain": 5
+		"commander_exp_gain": 5
 	},
 	"Easter Party": {
 		"attack": {
@@ -155,7 +155,7 @@
 		}
 	},
 	"Flight of the Heron": {
-		"damage to barbarians": 5,
+		"damage_to_barbarians": 5,
 		"attack": {
 			"archer": 10,
 			"infantry": -10
@@ -242,7 +242,7 @@
 		"attack": {
 			"all": 3
 		},
-		"training speed": 3,
+		"training_speed": 3,
 		"defense": {
 			"archer": -10
 		}
@@ -267,8 +267,8 @@
 		"attack": {
 			"cavalry": -10
 		},
-		"damage to barbarians": 5,
-		"skill damage": 5
+		"damage_to_barbarians": 5,
+		"skill_damage": 5
 	},
 	"Joyful Fest": {
 		"defense": {
@@ -285,7 +285,7 @@
 		}
 	},
 	"Lake Palace": {
-		"training speed": 3,
+		"training_speed": 3,
 		"defense": {
 			"all": 3
 		},
@@ -316,7 +316,7 @@
 		}
 	},
 	"Mayan Mystery": {
-		"healing speed": 3,
+		"healing_speed": 3,
 		"defense": {
 			"infantry": 10
 		},
@@ -368,7 +368,7 @@
 		}
 	},
 	"Persian dream": {
-		"healing speed": 3,
+		"healing_speed": 3,
 		"defense": {
 			"all": 3
 		},
@@ -402,7 +402,7 @@
 		}
 	},
 	"Ruins of Kom Ombo": {
-		"training speed": 3,
+		"training_speed": 3,
 		"defense": {
 			"all": 3
 		},
@@ -411,8 +411,8 @@
 		}
 	},
 	"Saint's Halo": {
-		"skill damage": 5,
-		"action point recovery": 5,
+		"skill_damage": 5,
+		"action_point_recovery": 5,
 		"health": {
 			"infantry": -10
 		}
@@ -460,7 +460,7 @@
 		"defense": {
 			"cavalry": -10
 		},
-		"healing speed": 3
+		"healing_speed": 3
 	},
 	"Summer of Passion": {
 		"attack": {
@@ -528,7 +528,7 @@
 		"defense": {
 			"archer": 10
 		},
-		"action point recovery": 5
+		"action_point_recovery": 5
 	},
 	"Trick or Treat": {
 		"attack": {
@@ -539,8 +539,8 @@
 		}
 	},
 	"Twilight Falls": {
-		"skill damage": 5,
-		"commander exp gain": 5,
+		"skill_damage": 5,
+		"commander_exp_gain": 5,
 		"attack": {
 			"infantry": -5
 		}
