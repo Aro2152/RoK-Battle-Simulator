@@ -1,1820 +1,938 @@
 {
     "helm": {
-      "Pride of the Khan": {
-        "rarity": 5,
-        "set": "SOC",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 15,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 8
-          }
+        "Pride of the Khan": {
+            "rarity": 5,
+            "set": "SOC",
+            "stats": {
+                "defense": {
+                    "cavalry": 15
+                },
+                "health": {
+                    "archer": 8
+                }
+            }
+        },
+        "Helm of the Conqueror": {
+            "rarity": 5,
+            "set": "SOC",
+            "stats": {
+                "defense": {
+                    "infantry": 15
+                },
+                "health": {
+                    "cavalry": 8
+                }
+            }
+        },
+        "Ancestral Mask of Night": {
+            "rarity": 5,
+            "set": "SOC",
+            "stats": {
+                "attack": {
+                    "archer": 15
+                }
+            }
+        },
+        "War Helm of the Hellish Wasteland": {
+            "rarity": 5,
+            "set": "Wasteland",
+            "stats": {
+                "attack": {
+                    "infantry": 4
+                },
+                "defense": {
+                    "archer": 3
+                }
+            }
+        },
+        "Dragon's Breath Helm": {
+            "rarity": 5,
+            "set": "Dragon",
+            "stats": {
+                "defense": {
+                    "infantry": 4
+                },
+                "attack": {
+                    "archer": 11
+                }
+            }
+        },
+        "Gold Helm of the Eternal Empire": {
+            "rarity": 5,
+            "set": "Empire",
+            "stats": {
+                "defense": {
+                    "infantry": 11
+                },
+                "health": {
+                    "archer": 4
+                }
+            }
+        },
+        "Abyssal Visage": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 3
+                }
+            }
+        },
+        "Revival helm": {
+            "rarity": 4,
+            "set": "Revival",
+            "stats": {
+                "defense": {
+                    "archer": 7.5
+                }
+            }
+        },
+        "Witch's Lineage": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "cavalry": 3
+                },
+                "defense": {
+                    "archer": 3
+                }
+            }
+        },
+        "Windswept War Helm": {
+            "rarity": 3,
+            "set": "Windswept",
+            "stats": {
+                "attack": {
+                    "cavalry": 4.5
+                }
+            }
+        },
+        "Expedition War Helm": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "cavalry": 6
+                }
+            }
+        },
+        "Helm of Fear": {
+            "rarity": 2,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "infantry": 2
+                },
+                "attack": {
+                    "cavalry": 4
+                }
+            }
+        },
+        "Helm of The Phoenix": {
+            "rarity": 2,
+            "set": null,
+            "stats": {
+                "health": {
+                    "infantry": 2
+                },
+                "defense": {
+                    "archer": 4
+                }
+            }
+        },
+        "Iron Helm": {
+            "rarity": 1,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "infantry": 3
+                }
+            }
         }
-      },
-      "Helm of the Conqueror": {
-        "rarity": 5,
-        "set": "SOC",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 15,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 8
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Ancestral Mask of Night": {
-        "rarity": 5,
-        "set": "SOC",
-        "stats": {
-          "infantry": {
-            "attack": 8,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 15,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "War Helm of the Hellish Wasteland": {
-        "rarity": 5,
-        "set": "Wasteland",
-        "stats": {
-          "infantry": {
-            "attack": 4,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 11,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 3,
-            "health": 0
-          }
-        }
-      },
-      "Dragon's Breath Helm": {
-        "rarity": 5,
-        "set": "Dragon",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 4,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 11,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Gold Helm of the Eternal Empire": {
-        "rarity": 5,
-        "set": "Empire",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 11,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 3
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 4
-          }
-        }
-      },
-      "Abyssal Visage": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 8,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Revival helm": {
-        "rarity": 4,
-        "set": "Revival",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 7.5,
-            "health": 0
-          }
-        }
-      },
-      "Witch's Lineage": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 8,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 3,
-            "health": 0
-          }
-        }
-      },
-      "Windswept War Helm": {
-        "rarity": 3,
-        "set": "Windswept",
-        "stats": {
-          "infantry": {
-            "attack": 4.5,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 4.5,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Expedition War Helm": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 2,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 6,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Helm of Fear": {
-        "rarity": 2,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 2,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 4,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Helm of The Phoenix": {
-        "rarity": 2,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 2
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 4,
-            "health": 0
-          }
-        }
-      },
-      "Iron Helm": {
-        "rarity": 1,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      }
     },
     "chest": {
-      "Hope Cloak": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 12,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          }
+        "Hope Cloak": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "archer": 5
+                }
+            }
+        },
+        "Heavy Armor of the Hellish Wasteland": {
+            "rarity": 5,
+            "set": "Wasteland",
+            "stats": {
+                "health": {
+                    "cavalry": 11
+                },
+                "attack": {
+                    "archer": 5
+                }
+            }
+        },
+        "Plate of the Eternal Empire": {
+            "rarity": 5,
+            "set": "Empire",
+            "stats": {
+                "health": {
+                    "infantry": 11
+                },
+                "defense": {
+                    "cavalry": 5
+                }
+            }
+        },
+        "Dragon's Breath Plate": {
+            "rarity": 5,
+            "set": "Dragon",
+            "stats": {
+                "defense": {
+                    "cavalry": 5
+                },
+                "health": {
+                    "archer": 11
+                }
+            }
+        },
+        "Dark Lord's Blessing": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "cavalry": 8
+                },
+                "attack": {
+                    "archer": 5
+                }
+            }
+        },
+        "Quinn's Soul": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "infantry": 8
+                },
+                "health": {
+                    "archer": 4
+                }
+            }
+        },
+        "Revival Plate": {
+            "rarity": 4,
+            "set": "Revival",
+            "stats": {
+                "defense": {
+                    "cavalry": 5
+                },
+                "attack": {
+                    "archer": 7.5
+                }
+            }
+        },
+        "Windswept Breastplate": {
+            "rarity": 3,
+            "set": "Windswept",
+            "stats": {
+                "defense": {
+                    "cavalry": 4.5
+                }
+            }
+        },
+        "Commander's Heavy Armor": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "infantry": 3
+                },
+                "health": {
+                    "archer": 6
+                }
+            }
+        },
+        "Infantry Breastplate": {
+            "rarity": 2,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "infantry": 4
+                },
+                "health": {
+                    "cavalry": 2
+                }
+            }
+        },
+        "Milanese Plate": {
+            "rarity": 2,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "cavalry": 4
+                },
+                "attack": {
+                    "archer": 2
+                }
+            }
+        },
+        "Chain Mail": {
+            "rarity": 1,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 3
+                }
+            }
         }
-      },
-      "Heavy Armor of the Hellish Wasteland": {
-        "rarity": 5,
-        "set": "Wasteland",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 11
-          },
-          "archers": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Plate of the Eternal Empire": {
-        "rarity": 5,
-        "set": "Empire",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 11
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Dragon's Breath Plate": {
-        "rarity": 5,
-        "set": "Dragon",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 11
-          }
-        }
-      },
-      "Dark Lord's Blessing": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 8,
-            "health": 0
-          },
-          "archers": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Quinn's Soul": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 8,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 4
-          }
-        }
-      },
-      "Revival Plate": {
-        "rarity": 4,
-        "set": "Revival",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 7.5,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Windswept Breastplate": {
-        "rarity": 3,
-        "set": "Windswept",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 4.5,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 4.5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Commander's Heavy Armor": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 6
-          }
-        }
-      },
-      "Infantry Breastplate": {
-        "rarity": 2,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 4,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 2
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Milanese Plate": {
-        "rarity": 2,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 4,
-            "health": 0
-          },
-          "archers": {
-            "attack": 2,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Chain Mail": {
-        "rarity": 1,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      }
     },
     "gauntlet": {
-      "Sacred Grips": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 8,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          }
+        "Sacred Grips": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "infantry": 8
+                },
+                "attack": {
+                    "archer": 5
+                }
+            }
+        },
+        "Navar's Control": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "infantry": 5
+                },
+                "health": {
+                    "cavalry": 8
+                }
+            }
+        },
+        "Vembraces of the Eternal Empire": {
+            "rarity": 5,
+            "set": "Empire",
+            "stats": {
+                "defense": {
+                    "infantry": 7.5
+                },
+                "attack": {
+                    "cavalry": 3
+                }
+            }
+        },
+        "Dragon's Breath Vembraces": {
+            "rarity": 5,
+            "set": "Dragon",
+            "stats": {
+                "attack": {
+                    "archer": 7.5
+                }
+            }
+        },
+        "Armband of the Hellish Wasteland": {
+            "rarity": 5,
+            "set": "Wasteland",
+            "stats": {
+                "defense": {
+                    "cavalry": 7.5
+                },
+                "health": {
+                    "archer": 3
+                }
+            }
+        },
+        "Ian's Choice": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 8
+                }
+            }
+        },
+        "Seth's Brutality": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "archer": 2
+                }
+            }
+        },
+        "Iset's Sufferance": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "cavalry": 3
+                },
+                "health": {
+                    "cavalry": 3
+                }
+            }
+        },
+        "Revival Gauntlets": {
+            "rarity": 4,
+            "set": "Revival",
+            "stats": {
+                "attack": {
+                    "archer": 4.5
+                }
+            }
+        },
+        "Windswept Bracers": {
+            "rarity": 3,
+            "set": "Windswept",
+            "stats": {
+                "health": {
+                    "cavalry": 2.5
+                }
+            }
+        },
+        "Saint's Song": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 2
+                }
+            }
+        },
+        "Calvin's Hand": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 1
+                },
+                "health": {
+                    "infantry": 1
+                }
+            }
+        },
+        "Leather Gloves": {
+            "rarity": 2,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "infantry": 1
+                },
+                "health": {
+                    "archer": 2.5
+                }
+            }
+        },
+        "Bronze Bracers": {
+            "rarity": 2,
+            "set": null,
+            "stats": {
+                "health": {
+                    "infantry": 1
+                },
+                "defense": {
+                    "cavalry": 2.5
+                }
+            }
+        },
+        "Cloth Gloves": {
+            "rarity": 1,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "infantry": 2
+                }
+            }
         }
-      },
-      "Navar's Control": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 8
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Vembraces of the Eternal Empire": {
-        "rarity": 5,
-        "set": "Empire",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 7.5,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Dragon's Breath Vembraces": {
-        "rarity": 5,
-        "set": "Dragon",
-        "stats": {
-          "infantry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 7.5,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Armband of the Hellish Wasteland": {
-        "rarity": 5,
-        "set": "Wasteland",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 7.5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 3
-          }
-        }
-      },
-      "Ian's Choice": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 8,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Seth's Brutality": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 5.5,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 2,
-            "health": 0
-          }
-        }
-      },
-      "Iset's Sufferance": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 3
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Revival Gauntlets": {
-        "rarity": 4,
-        "set": "Revival",
-        "stats": {
-          "infantry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 4.5,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Windswept Bracers": {
-        "rarity": 3,
-        "set": "Windswept",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 2.5
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 2.5
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Saint's Song": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 4,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 2,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Calvin's Hand": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 4,
-            "defense": 0,
-            "health": 1
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 1,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Leather Gloves": {
-        "rarity": 2,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 1,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 2.5
-          }
-        }
-      },
-      "Bronze Bracers": {
-        "rarity": 2,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 1
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 2.5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Cloth Gloves": {
-        "rarity": 1,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 2,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      }
     },
     "weapon": {
-      "Sacred Dominion": {
-        "rarity": 5,
-        "set": "SOC",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 25,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          }
+        "Sacred Dominion": {
+            "rarity": 5,
+            "set": "SOC",
+            "stats": {
+                "attack": {
+                    "cavalry": 25
+                },
+                "defense": {
+                    "archer": 5
+                }
+            }
+        },
+        "Hammer of the Sun and Moon": {
+            "rarity": 5,
+            "set": "SOC",
+            "stats": {
+                "attack": {
+                    "infantry": 25
+                },
+                "health": {
+                    "archer": 5
+                }
+            }
+        },
+        "The Hydra's Blast": {
+            "rarity": 5,
+            "set": "SOC",
+            "stats": {
+                "defense": {
+                    "archer": 25
+                }
+            }
+        },
+        "Rifle of the Hellish Wasteland": {
+            "rarity": 5,
+            "set": "Wasteland",
+            "stats": {
+                "health": {
+                    "infantry": 5
+                },
+                "attack": {
+                    "archer": 5
+                }
+            }
+        },
+        "Shield of the Eternal Empire": {
+            "rarity": 5,
+            "set": "Empire",
+            "stats": {
+                "attack": {
+                    "archer": 5
+                }
+            }
+        },
+        "Dragon's Breath Bow": {
+            "rarity": 5,
+            "set": "Dragon",
+            "stats": {
+                "health": {
+                    "cavalry": 5
+                },
+                "defense": {
+                    "archer": 20
+                }
+            }
+        },
+        "Trial of the Lost Kingdom": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "health": {
+                    "infantry": 5
+                },
+                "defense": {
+                    "cavalry": 15
+                },
+                "attack": {
+                    "archer": 5
+                }
+            }
+        },
+        "Sakura Fubuki": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 4
+                },
+                "health": {
+                    "cavalry": 6
+                }
+            }
+        },
+        "Heart of the Saint": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "health": {
+                    "archer": 6
+                },
+                "defense": {
+                    "cavalry": 13
+                }
+            }
+        },
+        "Golden Age": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "archer": 13
+                },
+                "attack": {
+                    "cavalry": 4
+                }
+            }
+        },
+        "Blazing Axe": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 5
+                }
+            }
+        },
+        "Staff of the Lost": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "archer": 8
+                }
+            }
+        },
+        "Gatekeeper's Shield": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "health": {
+                    "cavalry": 5
+                }
+            }
+        },
+        "Vanguard Halberd": {
+            "rarity": 2,
+            "set": "Vanguard",
+            "stats": {
+                "defense": {
+                    "cavalry": 5
+                },
+                "health": {
+                    "cavalry": 4
+                }
+            }
+        },
+        "Blessed Blade": {
+            "rarity": 2,
+            "set": null,
+            "stats": {
+                "health": {
+                    "infantry": 6
+                },
+                "attack": {
+                    "archer": 4
+                }
+            }
+        },
+        "Sharp Longsword": {
+            "rarity": 1,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "cavalry": 5
+                }
+            }
         }
-      },
-      "Hammer of the Sun and Moon": {
-        "rarity": 5,
-        "set": "SOC",
-        "stats": {
-          "infantry": {
-            "attack": 25,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 5
-          }
-        }
-      },
-      "The Hydra's Blast": {
-        "rarity": 5,
-        "set": "SOC",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 25,
-            "health": 0
-          }
-        }
-      },
-      "Rifle of the Hellish Wasteland": {
-        "rarity": 5,
-        "set": "Wasteland",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 5
-          },
-          "cavalry": {
-            "attack": 20,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Shield of the Eternal Empire": {
-        "rarity": 5,
-        "set": "Empire",
-        "stats": {
-          "infantry": {
-            "attack": 20,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Dragon's Breath Bow": {
-        "rarity": 5,
-        "set": "Dragon",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 5
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 5
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 20,
-            "health": 0
-          }
-        }
-      },
-      "Trial of the Lost Kingdom": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 5
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 15,
-            "health": 0
-          },
-          "archers": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Sakura Fubuki": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 13,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 6
-          },
-          "archers": {
-            "attack": 4,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Heart of the Saint": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 4
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 13,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 6
-          }
-        }
-      },
-      "Golden Age": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 6,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 4,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 13,
-            "health": 0
-          }
-        }
-      },
-      "Blazing Axe": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 8,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Staff of the Lost": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 3,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 8,
-            "health": 0
-          }
-        }
-      },
-      "Gatekeeper's Shield": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 8
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 5
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Vanguard Halberd": {
-        "rarity": 2,
-        "set": "Vanguard",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 4
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Blessed Blade": {
-        "rarity": 2,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 6
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 4,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Sharp Longsword": {
-        "rarity": 1,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      }
     },
     "legs": {
-      "Eternal Night": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 12,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          }
+        "Eternal Night": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "archer": 5
+                }
+            }
+        },
+        "Ash of the Dawn": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "health": {
+                    "cavalry": 12
+                }
+            }
+        },
+        "Cape of the War God": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 12
+                }
+            }
+        },
+        "Dragon's Breath Tassets": {
+            "rarity": 5,
+            "set": "Dragon",
+            "stats": {
+                "attack": {
+                    "archer": 11
+                }
+            }
+        },
+        "Tassets of the Hellish Wasteland": {
+            "rarity": 5,
+            "set": "Wasteland",
+            "stats": {
+                "defense": {
+                    "infantry": 5
+                },
+                "attack": {
+                    "cavalry": 11
+                }
+            }
+        },
+        "Graves of the eternal Empire": {
+            "rarity": 5,
+            "set": "Empire",
+            "stats": {
+                "attack": {
+                    "infantry": 11
+                },
+                "defense": {
+                    "archer": 5
+                }
+            }
+        },
+        "Karuak's Humility": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "health": {
+                    "infantry": 8
+                },
+                "attack": {
+                    "cavalry": 5
+                }
+            }
+        },
+        "Revival Greaves": {
+            "rarity": 4,
+            "set": "Revival",
+            "stats": {
+                "attack": {
+                    "cavalry": 5
+                },
+                "defense": {
+                    "archer": 7.5
+                }
+            }
+        },
+        "Fanatc's Tassets": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "archer": 8
+                }
+            }
+        },
+        "Gladiator": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "health": {
+                    "cavalry": 8
+                },
+                "defense": {
+                    "archer": 4
+                }
+            }
+        },
+        "Greaves of the Exile": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "archer": 6
+                }
+            }
+        },
+        "Sentry Breeches": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 3
+                },
+                "defense": {
+                    "cavalry": 1
+                }
+            }
+        },
+        "Vanguard Greaves": {
+            "rarity": 2,
+            "set": "Vanguard",
+            "stats": {
+                "attack": {
+                    "cavalry": 4
+                },
+                "health": {
+                    "cavalry": 1
+                }
+            }
+        },
+        "Ranger Trousers": {
+            "rarity": 2,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "infantry": 4
+                },
+                "defense": {
+                    "archer": 2
+                }
+            }
+        },
+        "Coarse Breeches": {
+            "rarity": 1,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "cavalry": 3
+                }
+            }
         }
-      },
-      "Ash of the Dawn": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 5
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 12
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Cape of the War God": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 12,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Dragon's Breath Tassets": {
-        "rarity": 5,
-        "set": "Dragon",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 11,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Tassets of the Hellish Wasteland": {
-        "rarity": 5,
-        "set": "Wasteland",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 11,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Graves of the eternal Empire": {
-        "rarity": 5,
-        "set": "Empire",
-        "stats": {
-          "infantry": {
-            "attack": 11,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          }
-        }
-      },
-      "Karuak's Humility": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 8
-          },
-          "cavalry": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Revival Greaves": {
-        "rarity": 4,
-        "set": "Revival",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 7.5,
-            "health": 0
-          }
-        }
-      },
-      "Fanatc's Tassets": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 5,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 8,
-            "health": 0
-          }
-        }
-      },
-      "Gladiator": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 8
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 4,
-            "health": 0
-          }
-        }
-      },
-      "Greaves of the Exile": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 3,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 6,
-            "health": 0
-          }
-        }
-      },
-      "Sentry Breeches": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 6,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 1,
-            "health": 0
-          },
-          "archers": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Vanguard Greaves": {
-        "rarity": 2,
-        "set": "Vanguard",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 4,
-            "defense": 0,
-            "health": 1
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Ranger Trousers": {
-        "rarity": 2,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 4,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 2,
-            "health": 0
-          }
-        }
-      },
-      "Coarse Breeches": {
-        "rarity": 1,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      }
     },
     "boots": {
-      "Mountain Crushers": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 8,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 5,
-            "defense": 0,
-            "health": 0
-          }
+        "Mountain Crushers": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 5
+                }
+            }
+        },
+        "Shio's Return": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "infantry": 8
+                },
+                "health": {
+                    "archer": 5
+                }
+            }
+        },
+        "Dragon's Breath Boots": {
+            "rarity": 5,
+            "set": "Dragon",
+            "stats": {
+                "defense": {
+                    "archer": 7.5
+                }
+            }
+        },
+        "Commander's Boots": {
+            "rarity": 5,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 8
+                }
+            }
+        },
+        "Boots of the Hellish Wasteland": {
+            "rarity": 5,
+            "set": "Wasteland",
+            "stats": {
+                "health": {
+                    "cavalry": 7.5
+                },
+                "attack": {
+                    "archer": 3
+                }
+            }
+        },
+        "Sturdy Boots of the Eternal Empire": {
+            "rarity": 5,
+            "set": "Empire",
+            "stats": {
+                "defense": {
+                    "cavalry": 3
+                }
+            }
+        },
+        "Cloud Racers": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "cavalry": 5.5
+                },
+                "health": {
+                    "archer": 2
+                }
+            }
+        },
+        "Frost Treads": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "infantry": 5.5
+                }
+            }
+        },
+        "Flame Treads": {
+            "rarity": 4,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "cavalry": 3
+                },
+                "health": {
+                    "archer": 5.5
+                }
+            }
+        },
+        "Windswept Boots": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "infantry": 2.5
+                },
+                "health": {
+                    "cavalry": 2.5
+                }
+            }
+        },
+        "The Scarlet Hounds": {
+            "rarity": 3,
+            "set": null,
+            "stats": {
+                "health": {
+                    "infantry": 4
+                }
+            }
+        },
+        "Boots of Reverence": {
+            "rarity": 2,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "infantry": 2.5
+                },
+                "defense": {
+                    "archer": 1
+                }
+            }
+        },
+        "Edged Boots": {
+            "rarity": 2,
+            "set": null,
+            "stats": {
+                "attack": {
+                    "archer": 2.5
+                }
+            }
+        },
+        "Sturdy Boots": {
+            "rarity": 1,
+            "set": null,
+            "stats": {
+                "defense": {
+                    "archer": 2
+                }
+            }
         }
-      },
-      "Shio's Return": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 8,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 5
-          }
-        }
-      },
-      "Dragon's Breath Boots": {
-        "rarity": 5,
-        "set": "Dragon",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 3,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 7.5,
-            "health": 0
-          }
-        }
-      },
-      "Commander's Boots": {
-        "rarity": 5,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 8,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Boots of the Hellish Wasteland": {
-        "rarity": 5,
-        "set": "Wasteland",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 7.5
-          },
-          "archers": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Sturdy Boots of the Eternal Empire": {
-        "rarity": 5,
-        "set": "Empire",
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 7.5,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 3,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Cloud Racers": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 5.5,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 2
-          }
-        }
-      },
-      "Frost Treads": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 5.5,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Flame Treads": {
-        "rarity": 4,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 3,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 5.5
-          }
-        }
-      },
-      "Windswept Boots": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 2.5,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 2.5
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "The Scarlet Hounds": {
-        "rarity": 3,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 4
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Boots of Reverence": {
-        "rarity": 2,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 2.5,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 1,
-            "health": 0
-          }
-        }
-      },
-      "Edged Boots": {
-        "rarity": 2,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 1,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 2.5,
-            "defense": 0,
-            "health": 0
-          }
-        }
-      },
-      "Sturdy Boots": {
-        "rarity": 1,
-        "set": null,
-        "stats": {
-          "infantry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "cavalry": {
-            "attack": 0,
-            "defense": 0,
-            "health": 0
-          },
-          "archers": {
-            "attack": 0,
-            "defense": 2,
-            "health": 0
-          }
-        }
-      }
     }
-  }
+}

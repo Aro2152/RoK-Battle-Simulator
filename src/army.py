@@ -5,7 +5,9 @@
 
 import json
 from commander import Commander
-from buff import Buff
+from special_buff import SpecialBuff
+from stat_buff import Buff, TroopBuff
+from copy import deepcopy
 
 class Army():
     def __init__(
@@ -36,45 +38,46 @@ class Army():
             self.secondary_commander = None
 
         # Init the buffs at 0
-        self.buffs = {
-            "attack": {
-                "all":      0,
-                "infantry": 0,
-                "cavalry":  0,
-                "archer":   0,
-                "siege":    0
-            },
-            "defense": {
-                "all":      0,
-                "infantry": 0,
-                "cavalry":  0,
-                "archer":   0,
-                "siege":    0
-            },
-            "health": {
-                "all":      0,
-                "infantry": 0,
-                "cavalry":  0,
-                "archer":   0,
-                "siege":    0
-            },
-            "march_speed": {
-                "all":      0,
-                "infantry": 0,
-                "cavalry":  0,
-                "archer":   0,
-                "siege":    0
-            },
-            "damage":                             0,
-            "skill_damage":                       0,
-            "additional_skill_damage":            0,  # e.g. Kusunoki's active skill
-            "reduce_damage_taken":                0,
-            "reduce_skill_damage_taken":          0,
-            "reduce_counter_attack_damage_taken": 0,
-            "normal_attack_damage":               0,
-            "counter_attack_damage":              0,
-            "damage_to_barbarians":               0
-        }
+        self.buffs = Buff()
+        # {
+        #     "attack": {
+        #         "all":      0,
+        #         "infantry": 0,
+        #         "cavalry":  0,
+        #         "archer":   0,
+        #         "siege":    0
+        #     },
+        #     "defense": {
+        #         "all":      0,
+        #         "infantry": 0,
+        #         "cavalry":  0,
+        #         "archer":   0,
+        #         "siege":    0
+        #     },
+        #     "health": {
+        #         "all":      0,
+        #         "infantry": 0,
+        #         "cavalry":  0,
+        #         "archer":   0,
+        #         "siege":    0
+        #     },
+        #     "march_speed": {
+        #         "all":      0,
+        #         "infantry": 0,
+        #         "cavalry":  0,
+        #         "archer":   0,
+        #         "siege":    0
+        #     },
+        #     "damage":                             0,
+        #     "skill_damage":                       0,
+        #     "additional_skill_damage":            0,  # e.g. Kusunoki's active skill
+        #     "reduce_damage_taken":                0,
+        #     "reduce_skill_damage_taken":          0,
+        #     "reduce_counter_attack_damage_taken": 0,
+        #     "normal_attack_damage":               0,
+        #     "counter_attack_damage":              0,
+        #     "damage_to_barbarians":               0
+        # }
 
         self.rage = 0
 
@@ -151,11 +154,14 @@ class Army():
 
     # Sum general buffs (attack, def, health)
     # with the one of specific troop type (only used for visualization)
-    def get_summed_buffs(self):
+    def get_summed_buffs(self):    
+        
+        # return( self.buffs.apply_all_to_types())
+                
         all_stats = {key: {} for key in self.categories["stat_types"]}
         for stat in self.buffs:
             if stat in self.categories["stat_types"]:
-                if isinstance(self.buffs[stat], dict):
+                if isinstance(self.buffs[stat], TroopBuff):
                     for tt in self.categories["troop_types"]:
                         all_stats[stat][tt] = self.buffs[stat][tt] + self.buffs[stat]["all"]
             else:
@@ -276,7 +282,7 @@ class Army():
                     else:
                         cooldown = None
 
-                    b = Buff(
+                    b = SpecialBuff(
                         talent_name,
                         talent["buffs"],
                         condition,
@@ -322,7 +328,7 @@ class Army():
                             # and has already been added
                             pass
 
-                        b = Buff(
+                        b = SpecialBuff(
                             buff_name,
                             actual_buff,
                             condition,
