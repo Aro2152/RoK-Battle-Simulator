@@ -1,4 +1,4 @@
-class Buff():
+class SpecialBuff():
     def __init__(
             self, name, buff,
             condition=None, duration=None,

@@ -1,0 +1,564 @@
+{
+    "Default": {},
+	"Age of Devotion": {
+		"attack": {
+			"cavalry": -5
+		},
+		"defense": {
+			"archer": -5
+		},
+		"health": {
+			"infantry": 10
+		}
+	},
+	"Alhambra Palace": {
+		"training_speed": 3,
+		"defense": {
+			"infantry": -10
+		},
+		"health": {
+			"all": 3
+		}
+	},
+	"All-Kingdom Carnival": {
+		"health": {
+			"infantry": 5,
+			"archer": -5
+		}
+	},
+	"Amber Fortress": {
+		"defense": {
+			"infantry": -5,
+			"cavalry": -5
+		},
+		"health": {
+			"archer": 10
+		}
+	},
+	"Atlantis": {
+		"attack": {
+			"archer": -5
+		},
+		"defense": {
+			"cavalry": -5
+		},
+		"health": {
+			"infantry": 10
+		}
+	},
+	"Babylonian Gardens": {
+		"attack": {
+			"infantry": 10
+		},
+		"defense": {
+			"cavalry": -5
+		},
+		"health": {
+			"archer": -5
+		}
+	},
+	"Blooming Court": {
+		"health": {
+			"archer": 5,
+			"infantry": 5
+		}
+	},
+	"Boundless Lighthouse": {
+		"defense": {
+			"infantry": 5
+		},
+		"health": {
+			"cavalry": -5
+		}
+	},
+	"Call of Eternity": {
+		"attack": {
+			"cavalry": 15,
+			"infantry": -5
+		},
+		"defense": {
+			"archer": -5
+		}
+	},
+	"City of Power": {
+		"healing_speed": 3,
+		"health": {
+			"cavalry": 10,
+			"infantry": -10
+		}
+	},
+	"Creepwood Cabin": {
+		"attack": {
+			"infantry": 5
+		},
+		"defense": {
+			"archer": -5
+		}
+	},
+	"Cupid's Arrow": {
+		"health": {
+			"infantry": 5,
+			"cavalry": -5
+		}
+	},
+	"Divine Abode": {
+		"ressource production": 15,
+		"defense": {
+			"cavalry": 10,
+			"infantry": -10
+		}
+	},
+	"Divine Lighthouse": {
+		"training_speed": 3,
+		"health": {
+			"all": 3,
+			"archer": -10
+		}
+	},
+	"Dragon Boat Wish": {
+		"defense": {
+			"archer": 5
+		},
+		"health": {
+			"cavalry": -5
+		}
+	},
+	"Dynastic Conqueror": {
+		"attack": {
+			"cavalry": -5
+		},
+		"defense": {
+			"all": 8
+		},
+		"commander_exp_gain": 5
+	},
+	"Easter Party": {
+		"attack": {
+			"cavalry": -5
+		},
+		"health": {
+			"archer": 5
+		}
+	},
+	"Ephesus": {
+		"attack": {
+			"archer": 5
+		},
+		"defense": {
+			"cavalry": -5
+		}
+	},
+	"Firework City": {
+		"attack": {
+			"cavalry": -5,
+			"infantry": 5
+		}
+	},
+	"Flight of the Heron": {
+		"damage_to_barbarians": 5,
+		"attack": {
+			"archer": 10,
+			"infantry": -10
+		}
+	},
+	"Frozen City": {
+		"attack": {
+			"cavalry": -5
+		},
+		"defense": {
+			"archer": 5
+		}
+	},
+	"Frozen Fortress": {
+		"defense": {
+			"infantry": 10,
+			"archer": -5
+		},
+		"health": {
+			"cavalry": -5
+		}
+	},
+	"Gift of the Nile": {
+		"attack": {
+			"archer": 5
+		},
+		"defense": {
+			"infantry": -5
+		}
+	},
+	"Gingerbread House": {
+		"attack": {
+			"archer": -5
+		},
+		"health": {
+			"infantry": 5
+		}
+	},
+	"Glorious Siam": {
+		"attack": {
+			"infantry": -5
+		},
+		"health": {
+			"cavalry": 5
+		}
+	},
+	"Golden Eye": {
+		"defense": {
+			"cavalry": 5
+		},
+		"health": {
+			"archer": -5
+		}
+	},
+	"Golden Sled Cottage": {
+		"health": {
+			"cavalry": 5,
+			"archer": -5
+		}
+	},
+	"Hall of Treasure": {
+		"attack": {
+			"archer": -5
+		},
+		"defense": {
+			"infantry": 5
+		}
+	},
+	"Harvest Cottage": {
+		"attack": {
+			"archer": 5,
+			"infantry": -5
+		}
+	},
+	"Harvest Hut": {
+		"attack": {
+			"archer": 5
+		},
+		"health": {
+			"cavalry": -5
+		}
+	},
+	"Heliopolis": {
+		"attack": {
+			"all": 3
+		},
+		"training_speed": 3,
+		"defense": {
+			"archer": -10
+		}
+	},
+	"Hidden Lotus": {
+		"attack": {
+			"cavalry": 5
+		},
+		"defense": {
+			"archer": -5
+		}
+	},
+	"Imperial Crane Palace": {
+		"defense": {
+			"infantry": -5
+		},
+		"health": {
+			"cavalry": 5
+		}
+	},
+	"Island Fortress": {
+		"attack": {
+			"cavalry": -10
+		},
+		"damage_to_barbarians": 5,
+		"skill_damage": 5
+	},
+	"Joyful Fest": {
+		"defense": {
+			"infantry": 5,
+			"cavalry": -5
+		}
+	},
+	"King's Cottage": {
+		"attack": {
+			"cavalry": -5
+		},
+		"defense": {
+			"infantry": 5
+		}
+	},
+	"Lake Palace": {
+		"training_speed": 3,
+		"defense": {
+			"all": 3
+		},
+		"health": {
+			"cavalry": -10
+		}
+	},
+	"Love and Thanks": {
+		"defense": {
+			"archer": 5,
+			"cavalry": -5
+		}
+	},
+	"Lucky Lanterns": {
+		"attack": {
+			"cavalry": -5
+		},
+		"defense": {
+			"archer": 5
+		}
+	},
+	"Magpie Bridge": {
+		"defense": {
+			"archer": -5
+		},
+		"health": {
+			"cavalry": 5
+		}
+	},
+	"Mayan Mystery": {
+		"healing_speed": 3,
+		"defense": {
+			"infantry": 10
+		},
+		"attack": {
+			"cavalry": -10
+		}
+	},
+	"Melk Abbey": {
+		"health": {
+			"cavalry": 10,
+			"infantry": -5,
+			"archer": -5
+		}
+	},
+	"Mighty Forest": {
+		"attack": {
+			"archer": -5
+		},
+		"health": {
+			"cavalry": -5
+		}
+	},
+	"Moment of Celebration": {
+		"attack": {
+			"infantry": -5
+		},
+		"health": {
+			"archer": 5
+		}
+	},
+	"No Place Like Home": {
+		"health": {
+			"archer": 5,
+			"cavalry": -5
+		}
+	},
+	"Nubian Longing": {
+		"attack": {
+			"infantry": -5
+		},
+		"defense": {
+			"archer": 5
+		}
+	},
+	"Perfect Harmony": {
+		"defense": {
+			"archer": -5,
+			"infantry": 5
+		}
+	},
+	"Persian dream": {
+		"healing_speed": 3,
+		"defense": {
+			"all": 3
+		},
+		"attack": {
+			"cavalry": -10
+		}
+	},
+	"Rare Exhibit": {
+		"attack": {
+			"cavalry": 5
+		},
+		"defense": {
+			"infantry": -5
+		}
+	},
+	"Road to the Crown": {
+		"attack": {
+			"cavalry": 10,
+			"archer": -5
+		},
+		"health": {
+			"infantry": -5
+		}
+	},
+	"Royal Manor": {
+		"defense": {
+			"cavalry": -5
+		},
+		"health": {
+			"archer": 5
+		}
+	},
+	"Ruins of Kom Ombo": {
+		"training_speed": 3,
+		"defense": {
+			"all": 3
+		},
+		"health": {
+			"infantry": -10
+		}
+	},
+	"Saint's Halo": {
+		"skill_damage": 5,
+		"action_point_recovery": 5,
+		"health": {
+			"infantry": -10
+		}
+	},
+	"Silent Night": {
+		"attack": {
+			"archer": 5
+		},
+		"health": {
+			"infantry": -5
+		}
+	},
+	"Snow Carol": {
+		"attack": {
+			"cavalry": 5,
+			"infantry": -5
+		}
+	},
+	"Soul Villa": {
+		"defense": {
+			"cavalry": 5
+		},
+		"health": {
+			"infantry": -5
+		}
+	},
+	"Sower's Song": {
+		"attack": {
+			"cavalry": 5
+		},
+		"health": {
+			"archer": -5
+		}
+	},
+	"Spring Blossoms": {
+		"health": {
+			"infantry": -5,
+			"cavalry": 5
+		}
+	},
+	"Summer Palace": {
+		"attack": {
+			"archer": 10
+		},
+		"defense": {
+			"cavalry": -10
+		},
+		"healing_speed": 3
+	},
+	"Summer of Passion": {
+		"attack": {
+			"archer": -5
+		},
+		"defense": {
+			"cavalry": 5
+		}
+	},
+	"Supreme Warrior": {
+		"attack": {
+			"infantry": 15,
+			"archer": -5
+		},
+		"defense": {
+			"cavalry": -5
+		}
+	},
+	"Swans' Reverie": {
+		"defense": {
+			"infantry": 5
+		},
+		"health": {
+			"archer": -5
+		}
+	},
+	"Tears of the Eternal": {
+		"attack": {
+			"archer": 5,
+			"cavalry": -5
+		}
+	},
+	"Temple of Artemis": {
+		"attack": {
+			"infantry": -5
+		},
+		"defense": {
+			"cavalry": 5
+		}
+	},
+	"Temple of Karnak": {
+		"health": {
+			"cavalry": 5,
+			"infantry": -5
+		}
+	},
+	"Temple of Vishnu": {
+		"defense": {
+			"cavalry": -5
+		},
+		"health": {
+			"infantry": 5
+		}
+	},
+	"Timbered Ensemble": {
+		"defense": {
+			"archer": 5,
+			"cavalry": -5
+		}
+	},
+	"Topkapi Palace": {
+		"attack": {
+			"all": -3
+		},
+		"defense": {
+			"archer": 10
+		},
+		"action_point_recovery": 5
+	},
+	"Trick or Treat": {
+		"attack": {
+			"infantry": 5
+		},
+		"health": {
+			"archer": -5
+		}
+	},
+	"Twilight Falls": {
+		"skill_damage": 5,
+		"commander_exp_gain": 5,
+		"attack": {
+			"infantry": -5
+		}
+	},
+	"Wailing Keep": {
+		"attack": {
+			"infantry": 5
+		},
+		"health": {
+			"cavalry": -5
+		}
+	},
+	"White Tower": {
+		"attack": {
+			"cavalry": -5
+		},
+		"health": {
+			"infantry": 5
+		}
+	}
+}

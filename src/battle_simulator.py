@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Authors: Aro2152
 # Copyright (C) 2022 Aro2152
 
