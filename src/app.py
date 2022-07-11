@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from asyncio import selector_events
 from dash import Dash, html, dcc, Input, Output
 import dash_bootstrap_components as dbc

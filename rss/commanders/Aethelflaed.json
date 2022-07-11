@@ -1,0 +1,96 @@
+{
+    "name": "Aethelflaed",
+    "talents": [
+        "Leadership",
+        "Peacekeeping",
+        "Support"
+    ],
+    "skills": {
+        "Arrow_or_Iron": {
+            "type": "active",
+            "rage_requirement": 1000,
+            "buffs": {
+                "direct_damage_factor": {
+                    "direct_damage_factor": [
+                        400, 500, 600, 700, 800
+                    ]
+                },
+                "reduce_enemy_attack_defense_health": {
+                    "bonus": [
+                        10, 15, 20, 25, 30
+                    ],
+                    "duration": 2
+                }
+            }
+        },
+        "Thunderous_Force": {
+            "type": "passive",
+            "buffs": {
+                "reduce_counter_attack_damage_taken": {
+                    "bonus": [
+                        5, 8, 11, 15, 20
+                    ]
+                },
+                "reduce_enemy_march_speed": {
+                    "march_speed": {
+                        "cavalry": [
+                            20, 25, 30, 40, 50
+                        ],
+                        "archer": [
+                            10, 15, 20, 25, 30
+                        ],
+                        "infantry": [
+                            10, 15, 20, 25, 30
+                        ],
+                        "siege": [
+                            10, 15, 20, 25, 30
+                        ]
+                    },
+                    "duration": 2,
+                    "probability": 10
+                }
+            }
+        },
+        "Synergy": {
+            "type": "passive",
+            "buffs": {
+                "damage_to_barbarians": {
+                    "bonus": [
+                        5, 10, 17, 25, 35
+                    ]
+                },
+                "experience": {
+                    "bonus": [
+                        5, 10, 17, 25, 35
+                    ]
+                }
+            }
+        },
+        "Fortress_of_Mercia": {
+            "type": "passive",
+            "buffs": {
+                "troop_capacity": {
+                    "bonus": [
+                        2, 4, 6, 8, 1
+                    ],
+                    "condition": ["rally"]
+                },
+                "attack": {
+                    "bonus": [
+                        5, 8, 11, 15, 20
+                    ],
+                    "condition": ["three_troop_type"]
+                }
+            }
+        },
+        "Warrior_Queen": {
+            "type": "passive",
+            "buffs": {
+                "damage": {
+                    "bonus": [20],
+                    "condition": ["slowed_down"]
+                }
+            }
+        }
+    }
+}

@@ -8,12 +8,83 @@
     "skills": {
         "Chosen_One": {
             "type": "active",
-            "category": "complex",
             "rage_requirement": 950,
             "buffs": {
-                "direct_damage_factor": [
-                    800, 1000, 1200, 1400, 1700
-                ]
+                "direct_damage_factor": {
+                    "direct_damage_factor": [
+                        800, 1000, 1200, 1400, 1700
+                    ]
+                }
+            }
+        },
+        "Cyclone_of_the_Steppes": {
+            "type": "passive",
+            "buffs": {
+                "reduce_rage_requirement": {
+                    "bonus": [
+                        20, 40, 60, 80, 100
+                    ]
+                },
+                "march_speed": {
+                    "cavalry": [
+                        3, 6, 9, 12, 15
+                    ]
+                },
+                "cancel_march_speed": {
+                    "condition": "actively_attacked"
+                },
+                "march_speed_reduction": {
+                    "bonus": [
+                        30, 25, 20, 15, 10
+                    ]
+                }
+            }
+        },
+        "Nomadic_Empire": {
+            "type": "passive",
+            "buffs": {
+                "damage": {
+                    "bonus": [
+                        10, 15, 20, 25, 30
+                    ],
+                    "condition": [
+                        "only_cavalry",
+                        "more_than_70%_units_remain"
+                    ]
+                }
+            }
+        },
+        "Military_Lifestyle": {
+            "type": "passive",
+            "buffs": {
+                "skill_damage": {
+                    "bonus": [
+                        10, 15, 20, 25, 30
+                    ],
+                    "condition": [
+                        "only_cavalry",
+                        "fewer_than_50%_units_remain"
+                    ]
+                },
+                "rage_restoration": {
+                    "bonus": [
+                        5, 10, 15, 20, 25
+                    ],
+                    "condition": [
+                        "only_cavalry",
+                        "fewer_than_50%_units_remain",
+                        "actively_attacked"
+                    ]
+                }
+            }
+        },
+        "Second_to_None": {
+            "type": "passive",
+            "buffs": {
+                "active_skill_additional_trigger": {
+                    "condition": ["only_cavalry"],
+                    "probability": [30]
+                }
             }
         }
     }

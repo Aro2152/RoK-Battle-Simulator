@@ -1,8 +1,8 @@
 {
     "Rome": {
         "buffs": {
-            "infantry": {
-                "defense": 5
+            "defense": {
+                "infantry": 5
             }
         },
         "troops": {
@@ -10,14 +10,16 @@
                 "infantry": {
                     "attack":  192,
                     "defense": 202,
-                    "health":  187
+                    "health":  187,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "infantry": {
                     "attack":  221,
                     "defense": 222,
-                    "health":  216
+                    "health":  216,
+                    "march_speed": 1
                 }
             }
         }
@@ -25,8 +27,8 @@
 
     "Germany": {
         "buffs": {
-            "cavalry": {
-                "attack": 5
+            "attack": {
+                "cavalry": 5
             }
         },
         "troops": {
@@ -34,14 +36,16 @@
                 "cavalry": {
                     "attack":  187,
                     "defense": 197,
-                    "health":  197
+                    "health":  197,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "cavalry": {
                     "attack":  220,
                     "defense": 217,
-                    "health":  222
+                    "health":  222,
+                    "march_speed": 1
                 }
             }
         }
@@ -49,8 +53,8 @@
 
     "Britain": {
         "buffs": {
-            "archer": {
-                "attack": 5
+            "attack": {
+                "archer": 5
             }
         },
         "troops": {
@@ -58,14 +62,16 @@
                 "archer": {
                     "attack":  202,
                     "defense": 192,
-                    "health":  187
+                    "health":  187,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "archer": {
                     "attack":  232,
                     "defense": 216,
-                    "health":  211
+                    "health":  211,
+                    "march_speed": 1
                 }
             }
         }
@@ -80,14 +86,16 @@
                 "infantry": {
                     "attack":  192,
                     "defense": 192,
-                    "health":  197
+                    "health":  197,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "infantry": {
                     "attack":  221,
                     "defense": 212,
-                    "health":  227
+                    "health":  227,
+                    "march_speed": 1
                 }
             }
         }
@@ -95,8 +103,8 @@
 
     "Vikings": {
         "buffs": {
-            "infantry": {
-                "attack": 5
+            "attack": {
+                "infantry": 5
             }
         },
         "troops": {
@@ -104,14 +112,16 @@
                 "infantry": {
                     "attack":  192,
                     "defense": 197,
-                    "health":  192
+                    "health":  192,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "infantry": {
                     "attack":  221,
                     "defense": 216,
-                    "health":  222
+                    "health":  222,
+                    "march_speed": 1
                 }
             }
         }
@@ -119,8 +129,8 @@
 
     "Spain": {
         "buffs": {
-            "cavalry": {
-                "defense": 5
+            "defense": {
+                "cavalry": 5
             }
         },
         "troops": {
@@ -128,14 +138,16 @@
                 "cavalry": {
                     "attack":  197,
                     "defense": 192,
-                    "health":  192
+                    "health":  192,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "cavalry": {
                     "attack":  232,
                     "defense": 212,
-                    "health":  216
+                    "health":  216,
+                    "march_speed": 1
                 }
             }
         }
@@ -150,14 +162,16 @@
                 "archer": {
                     "attack":  197,
                     "defense": 197,
-                    "health":  187
+                    "health":  187,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "archer": {
                     "attack":  227,
                     "defense": 222,
-                    "health":  211
+                    "health":  211,
+                    "march_speed": 1
                 }
             }
         }
@@ -172,14 +186,16 @@
                 "infantry": {
                     "attack":  202,
                     "defense": 192,
-                    "health":  187
+                    "health":  187,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "infantry": {
                     "attack":  232,
                     "defense": 212,
-                    "health":  216
+                    "health":  216,
+                    "march_speed": 1
                 }
             }
         }
@@ -187,8 +203,8 @@
 
     "Korea": {
         "buffs": {
-            "archer": {
-                "defense": 5
+            "defense": {
+                "archer": 5
             }
         },
         "troops": {
@@ -196,14 +212,16 @@
                 "archer": {
                     "attack":  192,
                     "defense": 202,
-                    "health":  187
+                    "health":  187,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "archer": {
                     "attack":  221,
                     "defense": 227,
-                    "health":  212
+                    "health":  212,
+                    "march_speed": 1
                 }
             }
         }
@@ -211,8 +229,8 @@
 
     "Arabia": {
         "buffs": {
-            "cavalry": {
-                "attack": 5
+            "attack": {
+                "cavalry": 5
             }
         },
         "troops": {
@@ -220,14 +238,16 @@
                 "cavalry": {
                     "attack":  192,
                     "defense": 192,
-                    "health":  197
+                    "health":  197,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "cavalry": {
                     "attack":  227,
                     "defense": 212,
-                    "health":  222
+                    "health":  222,
+                    "march_speed": 1
                 }
             }
         }
@@ -235,8 +255,8 @@
 
     "Ottoman": {
         "buffs": {
-            "archer": {
-                "health": 5
+            "health": {
+                "archer": 5
             }
         },
         "troops": {
@@ -244,14 +264,16 @@
                 "archer": {
                     "attack":  197,
                     "defense": 192,
-                    "health":  192
+                    "health":  192,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "archer": {
                     "attack":  227,
                     "defense": 216,
-                    "health":  216
+                    "health":  216,
+                    "march_speed": 1
                 }
             }
         }
@@ -259,8 +281,8 @@
 
     "Byzantium": {
         "buffs": {
-            "cavalry": {
-                "health": 5
+            "health": {
+                "archer": 5
             }
         },
         "troops": {
@@ -268,14 +290,16 @@
                 "cavalry": {
                     "attack":  187,
                     "defense": 202,
-                    "health":  192
+                    "health":  192,
+                    "march_speed": 2
                 }
             },
             "T5": {
                 "cavalry": {
                     "attack":  221,
                     "defense": 222,
-                    "health":  216
+                    "health":  216,
+                    "march_speed": 1
                 }
             }
         }
